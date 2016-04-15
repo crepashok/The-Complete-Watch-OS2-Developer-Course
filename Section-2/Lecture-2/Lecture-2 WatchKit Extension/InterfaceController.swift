@@ -17,7 +17,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var sldSlider: WKInterfaceSlider!
     @IBOutlet var lblLabel: WKInterfaceLabel!
     
-    var isChanged : Bool = false
+    var someBool : Bool = true
     
     var someString : String = "Mammoth"
     
@@ -56,7 +56,7 @@ class InterfaceController: WKInterfaceController {
     
     func changeTextButton() {
         
-        if someInt == 1 {
+        if someInt == 1 && someBool == true {
         
             btnButton.setTitle(someString)
             
