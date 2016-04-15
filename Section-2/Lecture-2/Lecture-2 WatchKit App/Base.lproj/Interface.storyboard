@@ -15,7 +15,8 @@
                                 <action selector="btnButtonAction" destination="AgC-eL-Hgc" id="Cfk-h8-9tN"/>
                             </connections>
                         </button>
-                        <switch width="1" alignment="left" value="YES" title="Switch" id="VU6-jw-qVm">
+                        <switch width="1" alignment="left" title="Switch" id="VU6-jw-qVm">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="swtSwitchAction:" destination="AgC-eL-Hgc" id="uEv-ZI-0cG"/>
                             </connections>

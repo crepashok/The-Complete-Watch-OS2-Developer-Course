@@ -17,6 +17,10 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var sldSlider: WKInterfaceSlider!
     @IBOutlet var lblLabel: WKInterfaceLabel!
     
+    var activeColor: UIColor = UIColor.orangeColor()
+    
+    var inactiveColor: UIColor = UIColor.darkGrayColor()
+    
     var someBool : Bool = true
     
     var someString : String = "Mammoth"
@@ -55,11 +59,11 @@ class InterfaceController: WKInterfaceController {
         
         if switchValue == false {
             
-            function1()
+            function2()
             
         } else {
             
-            function2()
+            function1()
         
         }
     }
@@ -70,15 +74,17 @@ class InterfaceController: WKInterfaceController {
     func function1() {
         btnButton.setTitle("Button changed")
         lblLabel.setText("Label changed")
-        lblLabel.setTextColor(UIColor.orangeColor())
-        btnButton.setBackgroundColor(UIColor.orangeColor())
+        lblLabel.setTextColor(activeColor)
+        btnButton.setBackgroundColor(activeColor)
+        swtSwitch.setColor(activeColor)
     }
     
     func function2() {
         btnButton.setTitle("Awesome")
         lblLabel.setText("Great")
-        lblLabel.setTextColor(UIColor.darkGrayColor())
-        btnButton.setBackgroundColor(UIColor.darkGrayColor())
+        lblLabel.setTextColor(inactiveColor)
+        btnButton.setBackgroundColor(inactiveColor)
+        swtSwitch.setColor(inactiveColor)
     }
     
 }
