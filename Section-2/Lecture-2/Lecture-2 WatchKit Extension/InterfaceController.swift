@@ -33,6 +33,8 @@ class InterfaceController: WKInterfaceController {
     
     var switchValue : Bool = false
     
+    var sliderValue : Float = 0.0
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -42,6 +44,7 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
     }
 
     override func didDeactivate() {
@@ -69,6 +72,10 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func sldSliderAction(value: Float) {
+        
+        sliderValue = value
+        
+        function3()
     }
     
     func function1() {
@@ -85,6 +92,30 @@ class InterfaceController: WKInterfaceController {
         lblLabel.setTextColor(inactiveColor)
         btnButton.setBackgroundColor(inactiveColor)
         swtSwitch.setColor(inactiveColor)
+    }
+    
+    func function3() {
+        
+        lblLabel.setText("Value = \(sliderValue)")
+        
+        if sliderValue == 1 {
+            
+            sldSlider.setColor(UIColor.greenColor())
+        
+        } else if sliderValue == 2 {
+            
+            sldSlider.setColor(UIColor.orangeColor())
+            
+        } else if sliderValue == 3 {
+            
+            sldSlider.setColor(UIColor.magentaColor())
+            
+        } else {
+        
+            sldSlider.setColor(UIColor.redColor())
+            
+        }
+        
     }
     
 }
