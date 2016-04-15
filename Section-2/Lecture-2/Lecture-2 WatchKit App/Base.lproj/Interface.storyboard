@@ -10,9 +10,21 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Lecture_2_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" title="Button" id="Aeq-dO-ga3"/>
-                        <switch width="1" alignment="left" value="YES" title="Switch" id="VU6-jw-qVm"/>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="Zvz-yc-z0L"/>
+                        <button width="1" alignment="left" title="Button" id="Aeq-dO-ga3">
+                            <connections>
+                                <action selector="btnButtonAction" destination="AgC-eL-Hgc" id="Cfk-h8-9tN"/>
+                            </connections>
+                        </button>
+                        <switch width="1" alignment="left" value="YES" title="Switch" id="VU6-jw-qVm">
+                            <connections>
+                                <action selector="swtSwitchAction:" destination="AgC-eL-Hgc" id="uEv-ZI-0cG"/>
+                            </connections>
+                        </switch>
+                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="Zvz-yc-z0L">
+                            <connections>
+                                <action selector="sldSliderAction:" destination="AgC-eL-Hgc" id="G7q-bJ-3Uf"/>
+                            </connections>
+                        </slider>
                         <label width="136" height="102.5" alignment="left" text="Label" id="DD0-Wc-zva"/>
                     </items>
                     <connections>

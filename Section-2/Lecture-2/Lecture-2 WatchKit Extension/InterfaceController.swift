@@ -13,11 +13,8 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet var btnButton: WKInterfaceButton!
-    
     @IBOutlet var swtSwitch: WKInterfaceSwitch!
-    
     @IBOutlet var sldSlider: WKInterfaceSlider!
-    
     @IBOutlet var lblLabel: WKInterfaceLabel!
     
     
@@ -38,4 +35,12 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func btnButtonAction() {
+    }
+    
+    @IBAction func swtSwitchAction(value: Bool) {
+    }
+    
+    @IBAction func sldSliderAction(value: Float) {
+    }
 }
