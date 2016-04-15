@@ -56,7 +56,7 @@ class InterfaceController: WKInterfaceController {
     
     func changeTextButton() {
         
-        if someString == "Mammoth" {
+        if someInt == 1 {
         
             btnButton.setTitle(someString)
             
