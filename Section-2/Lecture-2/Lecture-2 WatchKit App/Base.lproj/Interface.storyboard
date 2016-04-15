@@ -25,7 +25,7 @@
                                 <action selector="sldSliderAction:" destination="AgC-eL-Hgc" id="G7q-bJ-3Uf"/>
                             </connections>
                         </slider>
-                        <label width="136" height="102.5" alignment="left" text="Label" id="DD0-Wc-zva"/>
+                        <label width="136" height="48.5" alignment="left" text="Label" id="DD0-Wc-zva"/>
                     </items>
                     <connections>
                         <outlet property="btnButton" destination="Aeq-dO-ga3" id="Hsx-Bd-ogm"/>
@@ -35,7 +35,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="467" y="335"/>
+            <point key="canvasLocation" x="467" y="311"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">

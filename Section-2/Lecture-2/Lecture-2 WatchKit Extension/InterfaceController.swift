@@ -17,7 +17,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var sldSlider: WKInterfaceSlider!
     @IBOutlet var lblLabel: WKInterfaceLabel!
     
-    
+    var isChanged:Bool = false
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -36,6 +36,13 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnButtonAction() {
+        
+        let text = isChanged == true ? "Updated" : "Updated again"
+        
+        btnButton.setTitle(text)
+        isChanged = !isChanged
+        
+        lblLabel.setText(text)
     }
     
     @IBAction func swtSwitchAction(value: Bool) {
