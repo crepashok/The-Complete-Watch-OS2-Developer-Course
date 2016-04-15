@@ -12,20 +12,43 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var btnFlip: WKInterfaceButton!
+    
+    var coinFlipHeads : Bool = true
+    
+    let coinHead : String = "1.png"
+    
+    let coinTail : String = "2.png"
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        
     }
 
+    
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
 
+    
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
 
+    @IBAction func btnFlipAction() {
+        
+        flipTheCoin()
+        
+    }
+    
+    
+    func flipTheCoin() {
+        
+        btnFlip.setBackgroundImageNamed(coinFlipHeads == false ? coinHead : coinTail)
+        
+        coinFlipHeads = !coinFlipHeads
+        
+    }
 }

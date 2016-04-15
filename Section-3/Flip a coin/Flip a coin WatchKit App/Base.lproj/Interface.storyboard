@@ -10,9 +10,15 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Flip_a_coin_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="81.5" alignment="left" text="Coin" textAlignment="center" id="QiI-7n-qEJ"/>
-                        <button width="1" alignment="left" title="Flip" id="Au5-Gc-tEF"/>
+                        <button width="1" alignment="left" backgroundImage="1.png" id="Au5-Gc-tEF">
+                            <connections>
+                                <action selector="btnFlipAction" destination="AgC-eL-Hgc" id="oYX-3L-qOP"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnFlip" destination="Au5-Gc-tEF" id="9IT-0D-u6C"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

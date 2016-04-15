@@ -22,6 +22,8 @@
 		5FFDD9831CC0DE4500E2B92B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDD9821CC0DE4500E2B92B /* ExtensionDelegate.swift */; };
 		5FFDD9851CC0DE4500E2B92B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDD9841CC0DE4500E2B92B /* NotificationController.swift */; };
 		5FFDD9871CC0DE4500E2B92B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDD9861CC0DE4500E2B92B /* Assets.xcassets */; };
+		5FFDD99E1CC0EE9900E2B92B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDD99C1CC0EE9900E2B92B /* 1.png */; };
+		5FFDD99F1CC0EE9900E2B92B /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FFDD99D1CC0EE9900E2B92B /* 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,8 @@
 		5FFDD9841CC0DE4500E2B92B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		5FFDD9861CC0DE4500E2B92B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FFDD9881CC0DE4500E2B92B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FFDD99C1CC0EE9900E2B92B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		5FFDD99D1CC0EE9900E2B92B /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,8 @@
 		5FFDD96E1CC0DE4500E2B92B /* Flip a coin WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				5FFDD99C1CC0EE9900E2B92B /* 1.png */,
+				5FFDD99D1CC0EE9900E2B92B /* 2.png */,
 				5FFDD96F1CC0DE4500E2B92B /* Interface.storyboard */,
 				5FFDD9721CC0DE4500E2B92B /* Assets.xcassets */,
 				5FFDD9741CC0DE4500E2B92B /* Info.plist */,
@@ -397,7 +403,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FFDD99E1CC0EE9900E2B92B /* 1.png in Resources */,
 				5FFDD9731CC0DE4500E2B92B /* Assets.xcassets in Resources */,
+				5FFDD99F1CC0EE9900E2B92B /* 2.png in Resources */,
 				5FFDD9711CC0DE4500E2B92B /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
