@@ -55,8 +55,13 @@ class InterfaceController: WKInterfaceController {
     }
     
     func changeTextButton() {
-        btnButton.setTitle(someString)
-        lblLabel.setText("\(someInt)")
+        
+        someDouble += 3
+        
+        someInt += Int(someFloat) + 1
+        
+        btnButton.setTitle("\(someInt)")
+        lblLabel.setText("\(someDouble)")
     }
     
     func changeTextSwitch() {
