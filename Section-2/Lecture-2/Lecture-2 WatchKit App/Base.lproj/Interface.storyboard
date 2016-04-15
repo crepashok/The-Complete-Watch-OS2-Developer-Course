@@ -15,6 +15,12 @@
                         <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="Zvz-yc-z0L"/>
                         <label width="136" height="102.5" alignment="left" text="Label" id="DD0-Wc-zva"/>
                     </items>
+                    <connections>
+                        <outlet property="btnButton" destination="Aeq-dO-ga3" id="Hsx-Bd-ogm"/>
+                        <outlet property="lblLabel" destination="DD0-Wc-zva" id="DMn-Zl-bd0"/>
+                        <outlet property="sldSlider" destination="Zvz-yc-z0L" id="9gn-Ag-dMD"/>
+                        <outlet property="swtSwitch" destination="VU6-jw-qVm" id="hkz-fO-2jn"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="467" y="335"/>

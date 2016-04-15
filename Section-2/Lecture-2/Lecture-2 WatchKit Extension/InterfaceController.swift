@@ -12,10 +12,20 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var btnButton: WKInterfaceButton!
+    
+    @IBOutlet var swtSwitch: WKInterfaceSwitch!
+    
+    @IBOutlet var sldSlider: WKInterfaceSlider!
+    
+    @IBOutlet var lblLabel: WKInterfaceLabel!
+    
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        // Configure interface objects here.
+        btnButton.setTitle("Changed")
     }
 
     override func willActivate() {
