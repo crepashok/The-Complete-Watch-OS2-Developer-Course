@@ -27,6 +27,8 @@ class InterfaceController: WKInterfaceController {
     
     var someDouble : Double = 0.0
     
+    var switchValue : Bool = false
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -44,29 +46,38 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnButtonAction() {
-        changeTextButton()
+        function1()
     }
     
     @IBAction func swtSwitchAction(value: Bool) {
-        changeTextSwitch()
+        
+        switchValue = value
+        
+        if switchValue == false {
+            
+            function1()
+            
+        } else {
+            
+            function2()
+        
+        }
     }
     
     @IBAction func sldSliderAction(value: Float) {
     }
     
-    func changeTextButton() {
-        
+    func function1() {
+        btnButton.setTitle("Button changed")
         lblLabel.setText("Label changed")
         lblLabel.setTextColor(UIColor.orangeColor())
-        
         btnButton.setBackgroundColor(UIColor.orangeColor())
-        
     }
     
-    func changeTextSwitch() {
+    func function2() {
         btnButton.setTitle("Awesome")
         lblLabel.setText("Great")
-        lblLabel.setTextColor(UIColor.whiteColor())
+        lblLabel.setTextColor(UIColor.darkGrayColor())
         btnButton.setBackgroundColor(UIColor.darkGrayColor())
     }
     
