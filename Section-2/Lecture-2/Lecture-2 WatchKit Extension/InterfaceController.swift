@@ -36,19 +36,24 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnButtonAction() {
-        changeText()
+        changeTextButton()
     }
     
     @IBAction func swtSwitchAction(value: Bool) {
-        changeText()
+        changeTextSwitch()
     }
     
     @IBAction func sldSliderAction(value: Float) {
     }
     
-    func changeText() {
+    func changeTextButton() {
         btnButton.setTitle("Mammoth")
         lblLabel.setText("Interactive")
+    }
+    
+    func changeTextSwitch() {
+        btnButton.setTitle("Awesome")
+        lblLabel.setText("Great")
     }
     
 }
