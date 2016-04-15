@@ -21,7 +21,7 @@ class InterfaceController: WKInterfaceController {
     
     var someString : String = "Mammoth"
     
-    var someInt : Int = 2
+    var someInt : Int = 7
     
     var someFloat : Float = 0.0
     
@@ -64,9 +64,13 @@ class InterfaceController: WKInterfaceController {
             
             btnButton.setTitle("Interactive")
             
-        } else if someInt > 1 {
+        } else if someInt > 1 && someInt <= 5 {
             
             btnButton.setTitle("Games")
+            
+        } else {
+            
+            btnButton.setTitle("Out of range")
             
         }
     }
