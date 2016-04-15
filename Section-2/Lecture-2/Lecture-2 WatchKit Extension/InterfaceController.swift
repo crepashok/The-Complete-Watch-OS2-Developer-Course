@@ -59,12 +59,15 @@ class InterfaceController: WKInterfaceController {
         lblLabel.setText("Label changed")
         lblLabel.setTextColor(UIColor.orangeColor())
         
+        btnButton.setBackgroundColor(UIColor.orangeColor())
+        
     }
     
     func changeTextSwitch() {
         btnButton.setTitle("Awesome")
         lblLabel.setText("Great")
         lblLabel.setTextColor(UIColor.whiteColor())
+        btnButton.setBackgroundColor(UIColor.darkGrayColor())
     }
     
 }
