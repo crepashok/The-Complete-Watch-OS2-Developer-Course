@@ -17,7 +17,15 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var sldSlider: WKInterfaceSlider!
     @IBOutlet var lblLabel: WKInterfaceLabel!
     
-    var isChanged:Bool = false
+    var isChanged : Bool = false
+    
+    var someString : String = "Mammoth"
+    
+    var someInt : Int = 1
+    
+    var someFloat : Float = 0.0
+    
+    var someDouble : Double = 0.0
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -47,8 +55,8 @@ class InterfaceController: WKInterfaceController {
     }
     
     func changeTextButton() {
-        btnButton.setTitle("Mammoth")
-        lblLabel.setText("Interactive")
+        btnButton.setTitle(someString)
+        lblLabel.setText("\(someInt)")
     }
     
     func changeTextSwitch() {

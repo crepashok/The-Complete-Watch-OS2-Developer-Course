@@ -20,7 +20,7 @@
                                 <action selector="swtSwitchAction:" destination="AgC-eL-Hgc" id="uEv-ZI-0cG"/>
                             </connections>
                         </switch>
-                        <slider width="1" alignment="left" value="1" maximum="3" steps="3" id="Zvz-yc-z0L">
+                        <slider width="1" alignment="left" value="1" maximum="5" steps="5" id="Zvz-yc-z0L">
                             <connections>
                                 <action selector="sldSliderAction:" destination="AgC-eL-Hgc" id="G7q-bJ-3Uf"/>
                             </connections>
