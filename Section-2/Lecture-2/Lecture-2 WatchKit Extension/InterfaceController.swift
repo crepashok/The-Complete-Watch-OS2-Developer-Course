@@ -56,28 +56,15 @@ class InterfaceController: WKInterfaceController {
     
     func changeTextButton() {
         
-        if someInt == 0 {
+        lblLabel.setText("Label changed")
+        lblLabel.setTextColor(UIColor.orangeColor())
         
-            btnButton.setTitle("Mammoth")
-            
-        } else if someInt == 1 {
-            
-            btnButton.setTitle("Interactive")
-            
-        } else if someInt > 1 && someInt <= 5 {
-            
-            btnButton.setTitle("Games")
-            
-        } else {
-            
-            btnButton.setTitle("Out of range")
-            
-        }
     }
     
     func changeTextSwitch() {
         btnButton.setTitle("Awesome")
         lblLabel.setText("Great")
+        lblLabel.setTextColor(UIColor.whiteColor())
     }
     
 }
