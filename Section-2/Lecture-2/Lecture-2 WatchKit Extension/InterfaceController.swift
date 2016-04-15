@@ -21,7 +21,7 @@ class InterfaceController: WKInterfaceController {
     
     var someString : String = "Mammoth"
     
-    var someInt : Int = 1
+    var someInt : Int = 2
     
     var someFloat : Float = 0.0
     
@@ -56,9 +56,17 @@ class InterfaceController: WKInterfaceController {
     
     func changeTextButton() {
         
-        if someInt == 1 && someBool == true {
+        if someInt == 0 {
         
-            btnButton.setTitle(someString)
+            btnButton.setTitle("Mammoth")
+            
+        } else if someInt == 1 {
+            
+            btnButton.setTitle("Interactive")
+            
+        } else if someInt > 1 {
+            
+            btnButton.setTitle("Games")
             
         }
     }
