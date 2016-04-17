@@ -55,10 +55,22 @@ class InterfaceController: WKInterfaceController {
     
     func buttonNumberMealTotal() {
         buttonMealNumber += 1
+        
+        if buttonMealNumber == (mealCost.count - 1) {
+        
+            buttonMealNumber = 0
+            
+        }
     }
     
     func buttonNumberTipTotal() {
         buttonTiplNumber += 1
+        
+        if buttonTiplNumber == (tip.count - 1) {
+            
+            buttonTiplNumber = 0
+            
+        }
     }
     
     func calculateTotal() {
