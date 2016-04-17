@@ -25,6 +25,12 @@ class InterfaceController: WKInterfaceController {
     
     var tip = [0.1, 0.15, 0.2, 0.25, 0.3]
     
+    var buttonMealNumber : Int = 0
+    
+    var buttonTiplNumber : Int = 0
+    
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
@@ -38,8 +44,31 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func mealTotalClick() {
+        buttonNumberMealTotal()
+        calculateTotal()
     }
     
     @IBAction func tipTotalClick() {
+        buttonNumberTipTotal()
+        calculateTotal()
+    }
+    
+    func buttonNumberMealTotal() {
+        buttonMealNumber += 1
+    }
+    
+    func buttonNumberTipTotal() {
+        buttonTiplNumber += 1
+    }
+    
+    func calculateTotal() {
+        
+        
+        
+        printTip()
+    }
+    
+    func printTip() {
+        
     }
 }
