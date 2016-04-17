@@ -18,8 +18,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var btnMealTotal: WKInterfaceButton!
     @IBOutlet var btnTipTotal: WKInterfaceButton!
     
-    var mealTotal : Float = 0
-    var tipTotal : Float = 0
+    var mealTotal : Double = 0
+    var tipTotal : Double = 0
     
     var mealCostArray = [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 80.0, 100.0, 150.0, 180.0, 200.0]
     
@@ -81,13 +81,16 @@ class InterfaceController: WKInterfaceController {
     }
     
     func calculateTotal() {
-        
-        
+        tipTotal = mealCostArray[buttonMealNumber] * tipArray[buttonTiplNumber]
+        mealTotal = tipTotal + mealCostArray[buttonMealNumber]
         
         printTip()
     }
     
     func printTip() {
+        
+        lblTip.setText("Tip: $\(lblTotal)")
+        lblTotal.setText("Total: $\(mealTotal)")
         
     }
 }
