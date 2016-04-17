@@ -61,11 +61,12 @@ class InterfaceController: WKInterfaceController {
             buttonMealNumber = 0
             
         }
+        printButtons()
     }
     
     func printButtons() {
-        btnMealTotal.setTitle("$\(mealCostArray[buttonMealNumber])")
-        btnTipTotal.setTitle("\(tipArray[buttonTiplNumber] * 100)%")
+        btnMealTotal.setTitle("Meal Total: $\(mealCostArray[buttonMealNumber])")
+        btnTipTotal.setTitle("Tip Total: \(tipArray[buttonTiplNumber] * 100)%")
     }
     
     func buttonNumberTipTotal() {
@@ -76,6 +77,7 @@ class InterfaceController: WKInterfaceController {
             buttonTiplNumber = 0
             
         }
+        printButtons()
     }
     
     func calculateTotal() {

@@ -12,12 +12,14 @@
                     <items>
                         <label width="136" height="30.5" alignment="left" text="Tip: $0.00" textAlignment="center" id="yBo-dM-sLd"/>
                         <label width="136" height="32.5" alignment="left" text="Total: $0.00" textAlignment="center" id="JXq-32-Wxh"/>
-                        <button width="1" alignment="left" title="Meal Total $20.00" id="cdo-1U-wjy">
+                        <button width="1" alignment="left" title="Meal Total: $20.00" id="cdo-1U-wjy">
+                            <fontDescription key="font" type="system" pointSize="12"/>
                             <connections>
                                 <action selector="mealTotalClick" destination="AgC-eL-Hgc" id="434-DN-Trw"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Tip Total: 15%" id="GnX-De-0lV">
+                        <button width="1" alignment="left" title="Tip Total: 10.0%" id="GnX-De-0lV">
+                            <fontDescription key="font" type="system" pointSize="12"/>
                             <connections>
                                 <action selector="tipTotalClick" destination="AgC-eL-Hgc" id="NVe-AW-4ga"/>
                             </connections>
