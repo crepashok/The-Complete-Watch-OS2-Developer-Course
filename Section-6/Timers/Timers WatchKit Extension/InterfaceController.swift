@@ -28,10 +28,12 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func btnStartStopClick() {
+        tmrTimer.start()
     }
     
     
     @IBAction func btnResetClick() {
+        tmrTimer.stop()
     }
 
 }
