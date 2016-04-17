@@ -12,6 +12,12 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var lblTip: WKInterfaceLabel!
+    @IBOutlet var lblTotal: WKInterfaceLabel!
+    
+    @IBOutlet var btnMealTotal: WKInterfaceButton!
+    @IBOutlet var btnTipTotal: WKInterfaceButton!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -28,4 +34,9 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func mealTotalClick() {
+    }
+    
+    @IBAction func tipTotalClick() {
+    }
 }

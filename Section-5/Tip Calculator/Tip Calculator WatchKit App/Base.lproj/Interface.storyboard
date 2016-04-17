@@ -12,9 +12,23 @@
                     <items>
                         <label width="136" height="30.5" alignment="left" text="Tip: $0.00" textAlignment="center" id="yBo-dM-sLd"/>
                         <label width="136" height="32.5" alignment="left" text="Total: $0.00" textAlignment="center" id="JXq-32-Wxh"/>
-                        <button width="1" alignment="left" title="Meal Total $20.00" id="cdo-1U-wjy"/>
-                        <button width="1" alignment="left" title="Tip Total: 15%" id="GnX-De-0lV"/>
+                        <button width="1" alignment="left" title="Meal Total $20.00" id="cdo-1U-wjy">
+                            <connections>
+                                <action selector="mealTotalClick" destination="AgC-eL-Hgc" id="434-DN-Trw"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Tip Total: 15%" id="GnX-De-0lV">
+                            <connections>
+                                <action selector="tipTotalClick" destination="AgC-eL-Hgc" id="NVe-AW-4ga"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnMealTotal" destination="cdo-1U-wjy" id="X4O-Qi-usf"/>
+                        <outlet property="btnTipTotal" destination="GnX-De-0lV" id="XKL-CL-rkm"/>
+                        <outlet property="lblTip" destination="yBo-dM-sLd" id="C7G-Wc-Bg3"/>
+                        <outlet property="lblTotal" destination="JXq-32-Wxh" id="OQB-tU-MUz"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
