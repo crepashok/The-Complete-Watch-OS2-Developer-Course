@@ -13,9 +13,21 @@
                         <timer width="136" height="50.5" alignment="left" textAlignment="center" id="JLX-Iy-SOT">
                             <fontDescription key="font" type="system" pointSize="26"/>
                         </timer>
-                        <button width="1" alignment="left" title="Start" id="Ax9-hc-wVj"/>
-                        <button width="1" alignment="left" title="Reset" id="Vlf-R9-LOZ"/>
+                        <button width="1" alignment="left" title="Start" id="Ax9-hc-wVj">
+                            <connections>
+                                <action selector="btnStartStopClick" destination="AgC-eL-Hgc" id="TcU-91-1TM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset" id="Vlf-R9-LOZ">
+                            <connections>
+                                <action selector="btnResetClick" destination="AgC-eL-Hgc" id="QLT-6D-l3O"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnStartStop" destination="Ax9-hc-wVj" id="UFo-f4-EIF"/>
+                        <outlet property="tmrTimer" destination="JLX-Iy-SOT" id="jtR-6x-BQQ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="553" y="154"/>
