@@ -21,9 +21,9 @@ class InterfaceController: WKInterfaceController {
     var mealTotal : Float = 0
     var tipTotal : Float = 0
     
-    var mealCost = [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 80.0, 100.0, 150.0, 180.0, 200.0]
+    var mealCostArray = [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 80.0, 100.0, 150.0, 180.0, 200.0]
     
-    var tip = [0.1, 0.15, 0.2, 0.25, 0.3]
+    var tipArray = [0.1, 0.15, 0.2, 0.25, 0.3]
     
     var buttonMealNumber : Int = 0
     
@@ -56,17 +56,22 @@ class InterfaceController: WKInterfaceController {
     func buttonNumberMealTotal() {
         buttonMealNumber += 1
         
-        if buttonMealNumber == (mealCost.count - 1) {
+        if buttonMealNumber == (mealCostArray.count - 1) {
         
             buttonMealNumber = 0
             
         }
     }
     
+    func printButtons() {
+        btnMealTotal.setTitle("$\(mealCostArray[buttonMealNumber])")
+        btnTipTotal.setTitle("\(tipArray[buttonTiplNumber] * 100)%")
+    }
+    
     func buttonNumberTipTotal() {
         buttonTiplNumber += 1
         
-        if buttonTiplNumber == (tip.count - 1) {
+        if buttonTiplNumber == (tipArray.count - 1) {
             
             buttonTiplNumber = 0
             
