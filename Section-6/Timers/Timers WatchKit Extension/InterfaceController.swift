@@ -15,6 +15,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var tmrTimer: WKInterfaceTimer!
     @IBOutlet var btnStartStop: WKInterfaceButton!
     
+    var isStart : Bool = false
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
@@ -34,6 +36,26 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func btnResetClick() {
         tmrTimer.stop()
+    }
+    
+    func startTimerLogic() {
+    
+        if isStart == false {
+        
+            tmrTimer.start()
+            
+            btnStartStop.setTitle("Stop")
+            
+        } else {
+            
+            tmrTimer.stop()
+            
+            btnStartStop.setTitle("Start")
+            
+        }
+        
+        isStart = !isStart
+        
     }
 
 }
