@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F6CD85C1CC413A8003B0E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD85B1CC413A8003B0E4F /* AppDelegate.swift */; };
+		5F6CD85E1CC413A8003B0E4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD85D1CC413A8003B0E4F /* ViewController.swift */; };
+		5F6CD8611CC413A8003B0E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CD85F1CC413A8003B0E4F /* Main.storyboard */; };
+		5F6CD8631CC413A8003B0E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CD8621CC413A8003B0E4F /* Assets.xcassets */; };
+		5F6CD8661CC413A8003B0E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CD8641CC413A8003B0E4F /* LaunchScreen.storyboard */; };
+		5F6CD8711CC413A8003B0E4F /* Coffe_DeciderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD8701CC413A8003B0E4F /* Coffe_DeciderTests.swift */; };
+		5F6CD87C1CC413A8003B0E4F /* Coffe_DeciderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD87B1CC413A8003B0E4F /* Coffe_DeciderUITests.swift */; };
+		5F6CD8811CC413A8003B0E4F /* Coffe Decider WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5F6CD8801CC413A8003B0E4F /* Coffe Decider WatchKit App.app */; };
+		5F6CD8871CC413A8003B0E4F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CD8851CC413A8003B0E4F /* Interface.storyboard */; };
+		5F6CD8891CC413A8003B0E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CD8881CC413A8003B0E4F /* Assets.xcassets */; };
+		5F6CD8901CC413A9003B0E4F /* Coffe Decider WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5F6CD88F1CC413A9003B0E4F /* Coffe Decider WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F6CD8971CC413A9003B0E4F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD8961CC413A9003B0E4F /* InterfaceController.swift */; };
+		5F6CD8991CC413A9003B0E4F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD8981CC413A9003B0E4F /* ExtensionDelegate.swift */; };
+		5F6CD89B1CC413A9003B0E4F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD89A1CC413A9003B0E4F /* NotificationController.swift */; };
+		5F6CD89D1CC413A9003B0E4F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD89C1CC413A9003B0E4F /* GlanceController.swift */; };
+		5F6CD89F1CC413A9003B0E4F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6CD89E1CC413A9003B0E4F /* ComplicationController.swift */; };
+		5F6CD8A11CC413A9003B0E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F6CD8A01CC413A9003B0E4F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F6CD86D1CC413A8003B0E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F6CD8501CC413A8003B0E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6CD8571CC413A8003B0E4F;
+			remoteInfo = "Coffe Decider";
+		};
+		5F6CD8781CC413A8003B0E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F6CD8501CC413A8003B0E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6CD8571CC413A8003B0E4F;
+			remoteInfo = "Coffe Decider";
+		};
+		5F6CD8821CC413A8003B0E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F6CD8501CC413A8003B0E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6CD87F1CC413A8003B0E4F;
+			remoteInfo = "Coffe Decider WatchKit App";
+		};
+		5F6CD8911CC413A9003B0E4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F6CD8501CC413A8003B0E4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F6CD88E1CC413A9003B0E4F;
+			remoteInfo = "Coffe Decider WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F6CD8A81CC413A9003B0E4F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5F6CD8901CC413A9003B0E4F /* Coffe Decider WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD8AC1CC413A9003B0E4F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5F6CD8811CC413A8003B0E4F /* Coffe Decider WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F6CD8581CC413A8003B0E4F /* Coffe Decider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe Decider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6CD85B1CC413A8003B0E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F6CD85D1CC413A8003B0E4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F6CD8601CC413A8003B0E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F6CD8621CC413A8003B0E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F6CD8651CC413A8003B0E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F6CD8671CC413A8003B0E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6CD86C1CC413A8003B0E4F /* Coffe DeciderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffe DeciderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6CD8701CC413A8003B0E4F /* Coffe_DeciderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffe_DeciderTests.swift; sourceTree = "<group>"; };
+		5F6CD8721CC413A8003B0E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6CD8771CC413A8003B0E4F /* Coffe DeciderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coffe DeciderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6CD87B1CC413A8003B0E4F /* Coffe_DeciderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffe_DeciderUITests.swift; sourceTree = "<group>"; };
+		5F6CD87D1CC413A8003B0E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6CD8801CC413A8003B0E4F /* Coffe Decider WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffe Decider WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6CD8861CC413A8003B0E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5F6CD8881CC413A8003B0E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F6CD88A1CC413A8003B0E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F6CD88F1CC413A9003B0E4F /* Coffe Decider WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Coffe Decider WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6CD8951CC413A9003B0E4F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5F6CD8961CC413A9003B0E4F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5F6CD8981CC413A9003B0E4F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5F6CD89A1CC413A9003B0E4F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5F6CD89C1CC413A9003B0E4F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		5F6CD89E1CC413A9003B0E4F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5F6CD8A01CC413A9003B0E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F6CD8A21CC413A9003B0E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F6CD8551CC413A8003B0E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD8691CC413A8003B0E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD8741CC413A8003B0E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD88C1CC413A9003B0E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F6CD84F1CC413A8003B0E4F = {
+			isa = PBXGroup;
+			children = (
+				5F6CD85A1CC413A8003B0E4F /* Coffe Decider */,
+				5F6CD86F1CC413A8003B0E4F /* Coffe DeciderTests */,
+				5F6CD87A1CC413A8003B0E4F /* Coffe DeciderUITests */,
+				5F6CD8841CC413A8003B0E4F /* Coffe Decider WatchKit App */,
+				5F6CD8931CC413A9003B0E4F /* Coffe Decider WatchKit Extension */,
+				5F6CD8591CC413A8003B0E4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F6CD8591CC413A8003B0E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F6CD8581CC413A8003B0E4F /* Coffe Decider.app */,
+				5F6CD86C1CC413A8003B0E4F /* Coffe DeciderTests.xctest */,
+				5F6CD8771CC413A8003B0E4F /* Coffe DeciderUITests.xctest */,
+				5F6CD8801CC413A8003B0E4F /* Coffe Decider WatchKit App.app */,
+				5F6CD88F1CC413A9003B0E4F /* Coffe Decider WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F6CD85A1CC413A8003B0E4F /* Coffe Decider */ = {
+			isa = PBXGroup;
+			children = (
+				5F6CD85B1CC413A8003B0E4F /* AppDelegate.swift */,
+				5F6CD85D1CC413A8003B0E4F /* ViewController.swift */,
+				5F6CD85F1CC413A8003B0E4F /* Main.storyboard */,
+				5F6CD8621CC413A8003B0E4F /* Assets.xcassets */,
+				5F6CD8641CC413A8003B0E4F /* LaunchScreen.storyboard */,
+				5F6CD8671CC413A8003B0E4F /* Info.plist */,
+			);
+			path = "Coffe Decider";
+			sourceTree = "<group>";
+		};
+		5F6CD86F1CC413A8003B0E4F /* Coffe DeciderTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F6CD8701CC413A8003B0E4F /* Coffe_DeciderTests.swift */,
+				5F6CD8721CC413A8003B0E4F /* Info.plist */,
+			);
+			path = "Coffe DeciderTests";
+			sourceTree = "<group>";
+		};
+		5F6CD87A1CC413A8003B0E4F /* Coffe DeciderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F6CD87B1CC413A8003B0E4F /* Coffe_DeciderUITests.swift */,
+				5F6CD87D1CC413A8003B0E4F /* Info.plist */,
+			);
+			path = "Coffe DeciderUITests";
+			sourceTree = "<group>";
+		};
+		5F6CD8841CC413A8003B0E4F /* Coffe Decider WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5F6CD8851CC413A8003B0E4F /* Interface.storyboard */,
+				5F6CD8881CC413A8003B0E4F /* Assets.xcassets */,
+				5F6CD88A1CC413A8003B0E4F /* Info.plist */,
+			);
+			path = "Coffe Decider WatchKit App";
+			sourceTree = "<group>";
+		};
+		5F6CD8931CC413A9003B0E4F /* Coffe Decider WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5F6CD8961CC413A9003B0E4F /* InterfaceController.swift */,
+				5F6CD8981CC413A9003B0E4F /* ExtensionDelegate.swift */,
+				5F6CD89A1CC413A9003B0E4F /* NotificationController.swift */,
+				5F6CD89C1CC413A9003B0E4F /* GlanceController.swift */,
+				5F6CD89E1CC413A9003B0E4F /* ComplicationController.swift */,
+				5F6CD8A01CC413A9003B0E4F /* Assets.xcassets */,
+				5F6CD8A21CC413A9003B0E4F /* Info.plist */,
+				5F6CD8941CC413A9003B0E4F /* Supporting Files */,
+			);
+			path = "Coffe Decider WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5F6CD8941CC413A9003B0E4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F6CD8951CC413A9003B0E4F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F6CD8571CC413A8003B0E4F /* Coffe Decider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6CD8AD1CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe Decider" */;
+			buildPhases = (
+				5F6CD8541CC413A8003B0E4F /* Sources */,
+				5F6CD8551CC413A8003B0E4F /* Frameworks */,
+				5F6CD8561CC413A8003B0E4F /* Resources */,
+				5F6CD8AC1CC413A9003B0E4F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F6CD8831CC413A8003B0E4F /* PBXTargetDependency */,
+			);
+			name = "Coffe Decider";
+			productName = "Coffe Decider";
+			productReference = 5F6CD8581CC413A8003B0E4F /* Coffe Decider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F6CD86B1CC413A8003B0E4F /* Coffe DeciderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6CD8B01CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe DeciderTests" */;
+			buildPhases = (
+				5F6CD8681CC413A8003B0E4F /* Sources */,
+				5F6CD8691CC413A8003B0E4F /* Frameworks */,
+				5F6CD86A1CC413A8003B0E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F6CD86E1CC413A8003B0E4F /* PBXTargetDependency */,
+			);
+			name = "Coffe DeciderTests";
+			productName = "Coffe DeciderTests";
+			productReference = 5F6CD86C1CC413A8003B0E4F /* Coffe DeciderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F6CD8761CC413A8003B0E4F /* Coffe DeciderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6CD8B31CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe DeciderUITests" */;
+			buildPhases = (
+				5F6CD8731CC413A8003B0E4F /* Sources */,
+				5F6CD8741CC413A8003B0E4F /* Frameworks */,
+				5F6CD8751CC413A8003B0E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F6CD8791CC413A8003B0E4F /* PBXTargetDependency */,
+			);
+			name = "Coffe DeciderUITests";
+			productName = "Coffe DeciderUITests";
+			productReference = 5F6CD8771CC413A8003B0E4F /* Coffe DeciderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5F6CD87F1CC413A8003B0E4F /* Coffe Decider WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6CD8A91CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe Decider WatchKit App" */;
+			buildPhases = (
+				5F6CD87E1CC413A8003B0E4F /* Resources */,
+				5F6CD8A81CC413A9003B0E4F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F6CD8921CC413A9003B0E4F /* PBXTargetDependency */,
+			);
+			name = "Coffe Decider WatchKit App";
+			productName = "Coffe Decider WatchKit App";
+			productReference = 5F6CD8801CC413A8003B0E4F /* Coffe Decider WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5F6CD88E1CC413A9003B0E4F /* Coffe Decider WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6CD8A51CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe Decider WatchKit Extension" */;
+			buildPhases = (
+				5F6CD88B1CC413A9003B0E4F /* Sources */,
+				5F6CD88C1CC413A9003B0E4F /* Frameworks */,
+				5F6CD88D1CC413A9003B0E4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coffe Decider WatchKit Extension";
+			productName = "Coffe Decider WatchKit Extension";
+			productReference = 5F6CD88F1CC413A9003B0E4F /* Coffe Decider WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F6CD8501CC413A8003B0E4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pasha Cretsu";
+				TargetAttributes = {
+					5F6CD8571CC413A8003B0E4F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5F6CD86B1CC413A8003B0E4F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5F6CD8571CC413A8003B0E4F;
+					};
+					5F6CD8761CC413A8003B0E4F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5F6CD8571CC413A8003B0E4F;
+					};
+					5F6CD87F1CC413A8003B0E4F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5F6CD88E1CC413A9003B0E4F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 5F6CD8531CC413A8003B0E4F /* Build configuration list for PBXProject "Coffe Decider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F6CD84F1CC413A8003B0E4F;
+			productRefGroup = 5F6CD8591CC413A8003B0E4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F6CD8571CC413A8003B0E4F /* Coffe Decider */,
+				5F6CD86B1CC413A8003B0E4F /* Coffe DeciderTests */,
+				5F6CD8761CC413A8003B0E4F /* Coffe DeciderUITests */,
+				5F6CD87F1CC413A8003B0E4F /* Coffe Decider WatchKit App */,
+				5F6CD88E1CC413A9003B0E4F /* Coffe Decider WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F6CD8561CC413A8003B0E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6CD8661CC413A8003B0E4F /* LaunchScreen.storyboard in Resources */,
+				5F6CD8631CC413A8003B0E4F /* Assets.xcassets in Resources */,
+				5F6CD8611CC413A8003B0E4F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD86A1CC413A8003B0E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD8751CC413A8003B0E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD87E1CC413A8003B0E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6CD8891CC413A8003B0E4F /* Assets.xcassets in Resources */,
+				5F6CD8871CC413A8003B0E4F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD88D1CC413A9003B0E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6CD8A11CC413A9003B0E4F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F6CD8541CC413A8003B0E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6CD85E1CC413A8003B0E4F /* ViewController.swift in Sources */,
+				5F6CD85C1CC413A8003B0E4F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD8681CC413A8003B0E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6CD8711CC413A8003B0E4F /* Coffe_DeciderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD8731CC413A8003B0E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6CD87C1CC413A8003B0E4F /* Coffe_DeciderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F6CD88B1CC413A9003B0E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F6CD89B1CC413A9003B0E4F /* NotificationController.swift in Sources */,
+				5F6CD8991CC413A9003B0E4F /* ExtensionDelegate.swift in Sources */,
+				5F6CD89F1CC413A9003B0E4F /* ComplicationController.swift in Sources */,
+				5F6CD8971CC413A9003B0E4F /* InterfaceController.swift in Sources */,
+				5F6CD89D1CC413A9003B0E4F /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F6CD86E1CC413A8003B0E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F6CD8571CC413A8003B0E4F /* Coffe Decider */;
+			targetProxy = 5F6CD86D1CC413A8003B0E4F /* PBXContainerItemProxy */;
+		};
+		5F6CD8791CC413A8003B0E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F6CD8571CC413A8003B0E4F /* Coffe Decider */;
+			targetProxy = 5F6CD8781CC413A8003B0E4F /* PBXContainerItemProxy */;
+		};
+		5F6CD8831CC413A8003B0E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F6CD87F1CC413A8003B0E4F /* Coffe Decider WatchKit App */;
+			targetProxy = 5F6CD8821CC413A8003B0E4F /* PBXContainerItemProxy */;
+		};
+		5F6CD8921CC413A9003B0E4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F6CD88E1CC413A9003B0E4F /* Coffe Decider WatchKit Extension */;
+			targetProxy = 5F6CD8911CC413A9003B0E4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F6CD85F1CC413A8003B0E4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6CD8601CC413A8003B0E4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F6CD8641CC413A8003B0E4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6CD8651CC413A8003B0E4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5F6CD8851CC413A8003B0E4F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F6CD8861CC413A8003B0E4F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F6CD8A31CC413A9003B0E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F6CD8A41CC413A9003B0E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F6CD8A61CC413A9003B0E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Coffe Decider WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-Decider.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5F6CD8A71CC413A9003B0E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Coffe Decider WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-Decider.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5F6CD8AA1CC413A9003B0E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Coffe_Decider_WatchKit_Extension;
+				INFOPLIST_FILE = "Coffe Decider WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-Decider.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5F6CD8AB1CC413A9003B0E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Coffe_Decider_WatchKit_Extension;
+				INFOPLIST_FILE = "Coffe Decider WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-Decider.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5F6CD8AE1CC413A9003B0E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Coffe Decider/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-Decider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F6CD8AF1CC413A9003B0E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Coffe Decider/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-Decider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5F6CD8B11CC413A9003B0E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Coffe DeciderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-DeciderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coffe Decider.app/Coffe Decider";
+			};
+			name = Debug;
+		};
+		5F6CD8B21CC413A9003B0E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Coffe DeciderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-DeciderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coffe Decider.app/Coffe Decider";
+			};
+			name = Release;
+		};
+		5F6CD8B41CC413A9003B0E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Coffe DeciderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-DeciderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Coffe Decider";
+			};
+			name = Debug;
+		};
+		5F6CD8B51CC413A9003B0E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Coffe DeciderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CretsuDev.Coffe-DeciderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Coffe Decider";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F6CD8531CC413A8003B0E4F /* Build configuration list for PBXProject "Coffe Decider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6CD8A31CC413A9003B0E4F /* Debug */,
+				5F6CD8A41CC413A9003B0E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F6CD8A51CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe Decider WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6CD8A61CC413A9003B0E4F /* Debug */,
+				5F6CD8A71CC413A9003B0E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F6CD8A91CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe Decider WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6CD8AA1CC413A9003B0E4F /* Debug */,
+				5F6CD8AB1CC413A9003B0E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F6CD8AD1CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe Decider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6CD8AE1CC413A9003B0E4F /* Debug */,
+				5F6CD8AF1CC413A9003B0E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F6CD8B01CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe DeciderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6CD8B11CC413A9003B0E4F /* Debug */,
+				5F6CD8B21CC413A9003B0E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F6CD8B31CC413A9003B0E4F /* Build configuration list for PBXNativeTarget "Coffe DeciderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F6CD8B41CC413A9003B0E4F /* Debug */,
+				5F6CD8B51CC413A9003B0E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F6CD8501CC413A8003B0E4F /* Project object */;
+}
