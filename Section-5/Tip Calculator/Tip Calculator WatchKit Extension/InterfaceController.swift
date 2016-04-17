@@ -18,19 +18,22 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var btnMealTotal: WKInterfaceButton!
     @IBOutlet var btnTipTotal: WKInterfaceButton!
     
+    var mealTotal : Float = 0
+    var tipTotal : Float = 0
+    
+    var mealCost = [10.0, 15.0, 20.0, 25.0, 30.0, 35.0, 40.0, 45.0, 50.0, 80.0, 100.0, 150.0, 180.0, 200.0]
+    
+    var tip = [0.1, 0.15, 0.2, 0.25, 0.3]
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
     }
 
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
 
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
 
