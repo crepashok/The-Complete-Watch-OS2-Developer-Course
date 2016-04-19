@@ -19,6 +19,11 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var btnCreate: WKInterfaceButton!
     
+    var arrayBread =    ["White", "Wheat", "Grain", "Gluten-Free", "Flax"]
+    var arrayMeat =     ["Ham", "Turkey", "Salami", "Cold Cut", "Chicken"]
+    var arrayCheese =   ["Chedder", "Mozzarella", "Brie", "White Chedder", "Swiss"]
+    var arrayTops =     ["Onions", "Tomato", "Lettuce", "Pickles", "Olives"]
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
