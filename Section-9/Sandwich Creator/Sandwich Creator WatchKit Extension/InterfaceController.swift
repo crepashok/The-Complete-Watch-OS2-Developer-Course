@@ -42,6 +42,16 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnCreateClick() {
-        
+        randomiseNumbers()
+    }
+    
+    func randomiseNumbers() {
+        numberBread = Int(arc4random_uniform(UInt32(arrayBread.count)))
+        numberMeat = Int(arc4random_uniform(UInt32(arrayMeat.count)))
+        numberCheese = Int(arc4random_uniform(UInt32(arrayCheese.count)))
+        numberTops = Int(arc4random_uniform(UInt32(arrayTops.count)))
+    }
+    
+    func printSandwich() {
     }
 }
