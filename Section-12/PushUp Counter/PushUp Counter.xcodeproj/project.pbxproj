@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FC01BE41CC673E1007EE47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01BE31CC673E1007EE47F /* AppDelegate.swift */; };
+		5FC01BE61CC673E1007EE47F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01BE51CC673E1007EE47F /* ViewController.swift */; };
+		5FC01BE91CC673E1007EE47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01BE71CC673E1007EE47F /* Main.storyboard */; };
+		5FC01BEB1CC673E1007EE47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01BEA1CC673E1007EE47F /* Assets.xcassets */; };
+		5FC01BEE1CC673E1007EE47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01BEC1CC673E1007EE47F /* LaunchScreen.storyboard */; };
+		5FC01BF91CC673E1007EE47F /* PushUp_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01BF81CC673E1007EE47F /* PushUp_CounterTests.swift */; };
+		5FC01C041CC673E1007EE47F /* PushUp_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01C031CC673E1007EE47F /* PushUp_CounterUITests.swift */; };
+		5FC01C091CC673E1007EE47F /* PushUp Counter WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5FC01C081CC673E1007EE47F /* PushUp Counter WatchKit App.app */; };
+		5FC01C0F1CC673E1007EE47F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01C0D1CC673E1007EE47F /* Interface.storyboard */; };
+		5FC01C111CC673E1007EE47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01C101CC673E1007EE47F /* Assets.xcassets */; };
+		5FC01C181CC673E1007EE47F /* PushUp Counter WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5FC01C171CC673E1007EE47F /* PushUp Counter WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5FC01C1F1CC673E1007EE47F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01C1E1CC673E1007EE47F /* InterfaceController.swift */; };
+		5FC01C211CC673E1007EE47F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01C201CC673E1007EE47F /* ExtensionDelegate.swift */; };
+		5FC01C231CC673E1007EE47F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01C221CC673E1007EE47F /* NotificationController.swift */; };
+		5FC01C251CC673E1007EE47F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01C241CC673E1007EE47F /* GlanceController.swift */; };
+		5FC01C271CC673E1007EE47F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01C261CC673E1007EE47F /* ComplicationController.swift */; };
+		5FC01C291CC673E1007EE47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01C281CC673E1007EE47F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FC01BF51CC673E1007EE47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC01BD81CC673E1007EE47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC01BDF1CC673E1007EE47F;
+			remoteInfo = "PushUp Counter";
+		};
+		5FC01C001CC673E1007EE47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC01BD81CC673E1007EE47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC01BDF1CC673E1007EE47F;
+			remoteInfo = "PushUp Counter";
+		};
+		5FC01C0A1CC673E1007EE47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC01BD81CC673E1007EE47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC01C071CC673E1007EE47F;
+			remoteInfo = "PushUp Counter WatchKit App";
+		};
+		5FC01C191CC673E1007EE47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC01BD81CC673E1007EE47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC01C161CC673E1007EE47F;
+			remoteInfo = "PushUp Counter WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5FC01C301CC673E1007EE47F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5FC01C181CC673E1007EE47F /* PushUp Counter WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01C341CC673E1007EE47F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5FC01C091CC673E1007EE47F /* PushUp Counter WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5FC01BE01CC673E1007EE47F /* PushUp Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PushUp Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01BE31CC673E1007EE47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FC01BE51CC673E1007EE47F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FC01BE81CC673E1007EE47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FC01BEA1CC673E1007EE47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FC01BED1CC673E1007EE47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FC01BEF1CC673E1007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC01BF41CC673E1007EE47F /* PushUp CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushUp CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01BF81CC673E1007EE47F /* PushUp_CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUp_CounterTests.swift; sourceTree = "<group>"; };
+		5FC01BFA1CC673E1007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC01BFF1CC673E1007EE47F /* PushUp CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PushUp CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01C031CC673E1007EE47F /* PushUp_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUp_CounterUITests.swift; sourceTree = "<group>"; };
+		5FC01C051CC673E1007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC01C081CC673E1007EE47F /* PushUp Counter WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PushUp Counter WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01C0E1CC673E1007EE47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5FC01C101CC673E1007EE47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FC01C121CC673E1007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC01C171CC673E1007EE47F /* PushUp Counter WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PushUp Counter WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01C1D1CC673E1007EE47F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5FC01C1E1CC673E1007EE47F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5FC01C201CC673E1007EE47F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5FC01C221CC673E1007EE47F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5FC01C241CC673E1007EE47F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		5FC01C261CC673E1007EE47F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5FC01C281CC673E1007EE47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FC01C2A1CC673E1007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FC01BDD1CC673E1007EE47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01BF11CC673E1007EE47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01BFC1CC673E1007EE47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01C141CC673E1007EE47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FC01BD71CC673E1007EE47F = {
+			isa = PBXGroup;
+			children = (
+				5FC01BE21CC673E1007EE47F /* PushUp Counter */,
+				5FC01BF71CC673E1007EE47F /* PushUp CounterTests */,
+				5FC01C021CC673E1007EE47F /* PushUp CounterUITests */,
+				5FC01C0C1CC673E1007EE47F /* PushUp Counter WatchKit App */,
+				5FC01C1B1CC673E1007EE47F /* PushUp Counter WatchKit Extension */,
+				5FC01BE11CC673E1007EE47F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FC01BE11CC673E1007EE47F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01BE01CC673E1007EE47F /* PushUp Counter.app */,
+				5FC01BF41CC673E1007EE47F /* PushUp CounterTests.xctest */,
+				5FC01BFF1CC673E1007EE47F /* PushUp CounterUITests.xctest */,
+				5FC01C081CC673E1007EE47F /* PushUp Counter WatchKit App.app */,
+				5FC01C171CC673E1007EE47F /* PushUp Counter WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FC01BE21CC673E1007EE47F /* PushUp Counter */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01BE31CC673E1007EE47F /* AppDelegate.swift */,
+				5FC01BE51CC673E1007EE47F /* ViewController.swift */,
+				5FC01BE71CC673E1007EE47F /* Main.storyboard */,
+				5FC01BEA1CC673E1007EE47F /* Assets.xcassets */,
+				5FC01BEC1CC673E1007EE47F /* LaunchScreen.storyboard */,
+				5FC01BEF1CC673E1007EE47F /* Info.plist */,
+			);
+			path = "PushUp Counter";
+			sourceTree = "<group>";
+		};
+		5FC01BF71CC673E1007EE47F /* PushUp CounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01BF81CC673E1007EE47F /* PushUp_CounterTests.swift */,
+				5FC01BFA1CC673E1007EE47F /* Info.plist */,
+			);
+			path = "PushUp CounterTests";
+			sourceTree = "<group>";
+		};
+		5FC01C021CC673E1007EE47F /* PushUp CounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01C031CC673E1007EE47F /* PushUp_CounterUITests.swift */,
+				5FC01C051CC673E1007EE47F /* Info.plist */,
+			);
+			path = "PushUp CounterUITests";
+			sourceTree = "<group>";
+		};
+		5FC01C0C1CC673E1007EE47F /* PushUp Counter WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01C0D1CC673E1007EE47F /* Interface.storyboard */,
+				5FC01C101CC673E1007EE47F /* Assets.xcassets */,
+				5FC01C121CC673E1007EE47F /* Info.plist */,
+			);
+			path = "PushUp Counter WatchKit App";
+			sourceTree = "<group>";
+		};
+		5FC01C1B1CC673E1007EE47F /* PushUp Counter WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01C1E1CC673E1007EE47F /* InterfaceController.swift */,
+				5FC01C201CC673E1007EE47F /* ExtensionDelegate.swift */,
+				5FC01C221CC673E1007EE47F /* NotificationController.swift */,
+				5FC01C241CC673E1007EE47F /* GlanceController.swift */,
+				5FC01C261CC673E1007EE47F /* ComplicationController.swift */,
+				5FC01C281CC673E1007EE47F /* Assets.xcassets */,
+				5FC01C2A1CC673E1007EE47F /* Info.plist */,
+				5FC01C1C1CC673E1007EE47F /* Supporting Files */,
+			);
+			path = "PushUp Counter WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5FC01C1C1CC673E1007EE47F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01C1D1CC673E1007EE47F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FC01BDF1CC673E1007EE47F /* PushUp Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01C351CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp Counter" */;
+			buildPhases = (
+				5FC01BDC1CC673E1007EE47F /* Sources */,
+				5FC01BDD1CC673E1007EE47F /* Frameworks */,
+				5FC01BDE1CC673E1007EE47F /* Resources */,
+				5FC01C341CC673E1007EE47F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC01C0B1CC673E1007EE47F /* PBXTargetDependency */,
+			);
+			name = "PushUp Counter";
+			productName = "PushUp Counter";
+			productReference = 5FC01BE01CC673E1007EE47F /* PushUp Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FC01BF31CC673E1007EE47F /* PushUp CounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01C381CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp CounterTests" */;
+			buildPhases = (
+				5FC01BF01CC673E1007EE47F /* Sources */,
+				5FC01BF11CC673E1007EE47F /* Frameworks */,
+				5FC01BF21CC673E1007EE47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC01BF61CC673E1007EE47F /* PBXTargetDependency */,
+			);
+			name = "PushUp CounterTests";
+			productName = "PushUp CounterTests";
+			productReference = 5FC01BF41CC673E1007EE47F /* PushUp CounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FC01BFE1CC673E1007EE47F /* PushUp CounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01C3B1CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp CounterUITests" */;
+			buildPhases = (
+				5FC01BFB1CC673E1007EE47F /* Sources */,
+				5FC01BFC1CC673E1007EE47F /* Frameworks */,
+				5FC01BFD1CC673E1007EE47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC01C011CC673E1007EE47F /* PBXTargetDependency */,
+			);
+			name = "PushUp CounterUITests";
+			productName = "PushUp CounterUITests";
+			productReference = 5FC01BFF1CC673E1007EE47F /* PushUp CounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5FC01C071CC673E1007EE47F /* PushUp Counter WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01C311CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp Counter WatchKit App" */;
+			buildPhases = (
+				5FC01C061CC673E1007EE47F /* Resources */,
+				5FC01C301CC673E1007EE47F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC01C1A1CC673E1007EE47F /* PBXTargetDependency */,
+			);
+			name = "PushUp Counter WatchKit App";
+			productName = "PushUp Counter WatchKit App";
+			productReference = 5FC01C081CC673E1007EE47F /* PushUp Counter WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5FC01C161CC673E1007EE47F /* PushUp Counter WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01C2D1CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp Counter WatchKit Extension" */;
+			buildPhases = (
+				5FC01C131CC673E1007EE47F /* Sources */,
+				5FC01C141CC673E1007EE47F /* Frameworks */,
+				5FC01C151CC673E1007EE47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PushUp Counter WatchKit Extension";
+			productName = "PushUp Counter WatchKit Extension";
+			productReference = 5FC01C171CC673E1007EE47F /* PushUp Counter WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FC01BD81CC673E1007EE47F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pasha Cretsu";
+				TargetAttributes = {
+					5FC01BDF1CC673E1007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5FC01BF31CC673E1007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5FC01BDF1CC673E1007EE47F;
+					};
+					5FC01BFE1CC673E1007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5FC01BDF1CC673E1007EE47F;
+					};
+					5FC01C071CC673E1007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5FC01C161CC673E1007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 5FC01BDB1CC673E1007EE47F /* Build configuration list for PBXProject "PushUp Counter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FC01BD71CC673E1007EE47F;
+			productRefGroup = 5FC01BE11CC673E1007EE47F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FC01BDF1CC673E1007EE47F /* PushUp Counter */,
+				5FC01BF31CC673E1007EE47F /* PushUp CounterTests */,
+				5FC01BFE1CC673E1007EE47F /* PushUp CounterUITests */,
+				5FC01C071CC673E1007EE47F /* PushUp Counter WatchKit App */,
+				5FC01C161CC673E1007EE47F /* PushUp Counter WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FC01BDE1CC673E1007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01BEE1CC673E1007EE47F /* LaunchScreen.storyboard in Resources */,
+				5FC01BEB1CC673E1007EE47F /* Assets.xcassets in Resources */,
+				5FC01BE91CC673E1007EE47F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01BF21CC673E1007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01BFD1CC673E1007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01C061CC673E1007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01C111CC673E1007EE47F /* Assets.xcassets in Resources */,
+				5FC01C0F1CC673E1007EE47F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01C151CC673E1007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01C291CC673E1007EE47F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FC01BDC1CC673E1007EE47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01BE61CC673E1007EE47F /* ViewController.swift in Sources */,
+				5FC01BE41CC673E1007EE47F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01BF01CC673E1007EE47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01BF91CC673E1007EE47F /* PushUp_CounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01BFB1CC673E1007EE47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01C041CC673E1007EE47F /* PushUp_CounterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01C131CC673E1007EE47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01C231CC673E1007EE47F /* NotificationController.swift in Sources */,
+				5FC01C211CC673E1007EE47F /* ExtensionDelegate.swift in Sources */,
+				5FC01C271CC673E1007EE47F /* ComplicationController.swift in Sources */,
+				5FC01C1F1CC673E1007EE47F /* InterfaceController.swift in Sources */,
+				5FC01C251CC673E1007EE47F /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FC01BF61CC673E1007EE47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC01BDF1CC673E1007EE47F /* PushUp Counter */;
+			targetProxy = 5FC01BF51CC673E1007EE47F /* PBXContainerItemProxy */;
+		};
+		5FC01C011CC673E1007EE47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC01BDF1CC673E1007EE47F /* PushUp Counter */;
+			targetProxy = 5FC01C001CC673E1007EE47F /* PBXContainerItemProxy */;
+		};
+		5FC01C0B1CC673E1007EE47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC01C071CC673E1007EE47F /* PushUp Counter WatchKit App */;
+			targetProxy = 5FC01C0A1CC673E1007EE47F /* PBXContainerItemProxy */;
+		};
+		5FC01C1A1CC673E1007EE47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC01C161CC673E1007EE47F /* PushUp Counter WatchKit Extension */;
+			targetProxy = 5FC01C191CC673E1007EE47F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FC01BE71CC673E1007EE47F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC01BE81CC673E1007EE47F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FC01BEC1CC673E1007EE47F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC01BED1CC673E1007EE47F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5FC01C0D1CC673E1007EE47F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC01C0E1CC673E1007EE47F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FC01C2B1CC673E1007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FC01C2C1CC673E1007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FC01C2E1CC673E1007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "PushUp Counter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-Counter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5FC01C2F1CC673E1007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "PushUp Counter WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-Counter.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5FC01C321CC673E1007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PushUp_Counter_WatchKit_Extension;
+				INFOPLIST_FILE = "PushUp Counter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-Counter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5FC01C331CC673E1007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PushUp_Counter_WatchKit_Extension;
+				INFOPLIST_FILE = "PushUp Counter WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-Counter.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5FC01C361CC673E1007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "PushUp Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FC01C371CC673E1007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "PushUp Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5FC01C391CC673E1007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "PushUp CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushUp Counter.app/PushUp Counter";
+			};
+			name = Debug;
+		};
+		5FC01C3A1CC673E1007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "PushUp CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PushUp Counter.app/PushUp Counter";
+			};
+			name = Release;
+		};
+		5FC01C3C1CC673E1007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PushUp CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PushUp Counter";
+			};
+			name = Debug;
+		};
+		5FC01C3D1CC673E1007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PushUp CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.PushUp-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "PushUp Counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FC01BDB1CC673E1007EE47F /* Build configuration list for PBXProject "PushUp Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01C2B1CC673E1007EE47F /* Debug */,
+				5FC01C2C1CC673E1007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC01C2D1CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp Counter WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01C2E1CC673E1007EE47F /* Debug */,
+				5FC01C2F1CC673E1007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FC01C311CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp Counter WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01C321CC673E1007EE47F /* Debug */,
+				5FC01C331CC673E1007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FC01C351CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01C361CC673E1007EE47F /* Debug */,
+				5FC01C371CC673E1007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FC01C381CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp CounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01C391CC673E1007EE47F /* Debug */,
+				5FC01C3A1CC673E1007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FC01C3B1CC673E1007EE47F /* Build configuration list for PBXNativeTarget "PushUp CounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01C3C1CC673E1007EE47F /* Debug */,
+				5FC01C3D1CC673E1007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FC01BD81CC673E1007EE47F /* Project object */;
+}
