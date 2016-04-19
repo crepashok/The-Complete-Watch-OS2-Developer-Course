@@ -25,6 +25,7 @@ class InterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        randomizeTheNumbers()
     }
 
     override func willActivate() {
@@ -36,6 +37,23 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func btnGenerateClick() {
+        randomizeTheNumbers()
+    }
+    
+    func randomizeTheNumbers() {
+        numberEmoji = Int(arc4random_uniform(UInt32(emojiArray.count)))
+        numberButton = Int(arc4random_uniform(UInt32(buttonArray.count)))
+        
+        printEmoji()
+        printButton()
+    }
+    
+    func printEmoji() {
+        lblEmojiDisplay.setText("\(emojiArray[numberEmoji])")
+    }
+    
+    func printButton() {
+        btnGenerate.setTitle("\(buttonArray[numberButton])")
     }
 
 }
