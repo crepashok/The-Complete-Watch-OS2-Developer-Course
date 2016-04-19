@@ -14,8 +14,19 @@
                         <label width="1" height="25" alignment="left" text="Meat:" id="Kgr-E3-xsX"/>
                         <label width="1" height="25" alignment="left" text="Cheese:" id="RLP-MM-5eE"/>
                         <label width="1" height="25" alignment="left" text="Tops:" id="4yl-Nx-0KK"/>
-                        <button width="1" alignment="left" title="Create" id="zQ4-LO-4eM"/>
+                        <button width="1" alignment="left" title="Create!" id="zQ4-LO-4eM">
+                            <connections>
+                                <action selector="btnCreateClick" destination="AgC-eL-Hgc" id="e29-zS-j97"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnCreate" destination="zQ4-LO-4eM" id="M1D-27-73J"/>
+                        <outlet property="lblBread" destination="S79-2k-Zt5" id="C9e-RM-7Cz"/>
+                        <outlet property="lblCheese" destination="RLP-MM-5eE" id="5z6-Gg-CQn"/>
+                        <outlet property="lblMeat" destination="Kgr-E3-xsX" id="w0Z-pt-a2q"/>
+                        <outlet property="lblTops" destination="4yl-Nx-0KK" id="8ha-E6-oTb"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
