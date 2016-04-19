@@ -21,7 +21,7 @@ class InterfaceController: WKInterfaceController {
     
     var arrayBread =    ["White", "Wheat", "Grain", "Gluten-Free", "Flax"]
     var arrayMeat =     ["Ham", "Turkey", "Salami", "Cold Cut", "Chicken"]
-    var arrayCheese =   ["Chedder", "Mozzarella", "Brie", "White Chedder", "Swiss"]
+    var arrayCheese =   ["Chedder", "Mozzarella", "Brie", "Havarti", "Swiss"]
     var arrayTops =     ["Onions", "Tomato", "Lettuce", "Pickles", "Olives"]
     
     var numberBread : Int = 0
@@ -31,6 +31,7 @@ class InterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        randomiseNumbers()
     }
 
     override func willActivate() {

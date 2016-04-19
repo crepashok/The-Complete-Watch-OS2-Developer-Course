@@ -10,10 +10,18 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Sandwich_Creator_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="25" alignment="left" text="Bread:" id="S79-2k-Zt5"/>
-                        <label width="1" height="25" alignment="left" text="Meat:" id="Kgr-E3-xsX"/>
-                        <label width="1" height="25" alignment="left" text="Cheese:" id="RLP-MM-5eE"/>
-                        <label width="1" height="25" alignment="left" text="Tops:" id="4yl-Nx-0KK"/>
+                        <label width="1" height="28" alignment="left" text="Bread:" id="S79-2k-Zt5">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="1" height="28" alignment="left" text="Meat:" id="Kgr-E3-xsX">
+                            <color key="textColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="1" height="28" alignment="left" text="Cheese:" id="RLP-MM-5eE">
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <label width="1" height="28" alignment="left" text="Tops:" id="4yl-Nx-0KK">
+                            <color key="textColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
                         <button width="1" alignment="left" title="Create!" id="zQ4-LO-4eM">
                             <connections>
                                 <action selector="btnCreateClick" destination="AgC-eL-Hgc" id="e29-zS-j97"/>
