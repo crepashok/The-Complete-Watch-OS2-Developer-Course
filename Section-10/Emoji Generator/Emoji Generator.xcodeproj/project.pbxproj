@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F5A59461CC6637000C0976A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A59451CC6637000C0976A /* AppDelegate.swift */; };
+		5F5A59481CC6637000C0976A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A59471CC6637000C0976A /* ViewController.swift */; };
+		5F5A594B1CC6637000C0976A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A59491CC6637000C0976A /* Main.storyboard */; };
+		5F5A594D1CC6637000C0976A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A594C1CC6637000C0976A /* Assets.xcassets */; };
+		5F5A59501CC6637000C0976A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A594E1CC6637000C0976A /* LaunchScreen.storyboard */; };
+		5F5A595B1CC6637000C0976A /* Emoji_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A595A1CC6637000C0976A /* Emoji_GeneratorTests.swift */; };
+		5F5A59661CC6637000C0976A /* Emoji_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A59651CC6637000C0976A /* Emoji_GeneratorUITests.swift */; };
+		5F5A596B1CC6637000C0976A /* Emoji Generator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5F5A596A1CC6637000C0976A /* Emoji Generator WatchKit App.app */; };
+		5F5A59711CC6637000C0976A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A596F1CC6637000C0976A /* Interface.storyboard */; };
+		5F5A59731CC6637000C0976A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A59721CC6637000C0976A /* Assets.xcassets */; };
+		5F5A597A1CC6637000C0976A /* Emoji Generator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5F5A59791CC6637000C0976A /* Emoji Generator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5F5A59811CC6637000C0976A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A59801CC6637000C0976A /* InterfaceController.swift */; };
+		5F5A59831CC6637000C0976A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A59821CC6637000C0976A /* ExtensionDelegate.swift */; };
+		5F5A59851CC6637000C0976A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A59841CC6637000C0976A /* NotificationController.swift */; };
+		5F5A59871CC6637000C0976A /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A59861CC6637000C0976A /* GlanceController.swift */; };
+		5F5A59891CC6637000C0976A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5A59881CC6637000C0976A /* ComplicationController.swift */; };
+		5F5A598B1CC6637000C0976A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F5A598A1CC6637000C0976A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F5A59571CC6637000C0976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F5A593A1CC6637000C0976A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5A59411CC6637000C0976A;
+			remoteInfo = "Emoji Generator";
+		};
+		5F5A59621CC6637000C0976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F5A593A1CC6637000C0976A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5A59411CC6637000C0976A;
+			remoteInfo = "Emoji Generator";
+		};
+		5F5A596C1CC6637000C0976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F5A593A1CC6637000C0976A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5A59691CC6637000C0976A;
+			remoteInfo = "Emoji Generator WatchKit App";
+		};
+		5F5A597B1CC6637000C0976A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F5A593A1CC6637000C0976A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F5A59781CC6637000C0976A;
+			remoteInfo = "Emoji Generator WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5F5A59921CC6637000C0976A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5F5A597A1CC6637000C0976A /* Emoji Generator WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A59961CC6637000C0976A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5F5A596B1CC6637000C0976A /* Emoji Generator WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F5A59421CC6637000C0976A /* Emoji Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5A59451CC6637000C0976A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F5A59471CC6637000C0976A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F5A594A1CC6637000C0976A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F5A594C1CC6637000C0976A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F5A594F1CC6637000C0976A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F5A59511CC6637000C0976A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5A59561CC6637000C0976A /* Emoji GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5A595A1CC6637000C0976A /* Emoji_GeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_GeneratorTests.swift; sourceTree = "<group>"; };
+		5F5A595C1CC6637000C0976A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5A59611CC6637000C0976A /* Emoji GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Emoji GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5A59651CC6637000C0976A /* Emoji_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji_GeneratorUITests.swift; sourceTree = "<group>"; };
+		5F5A59671CC6637000C0976A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5A596A1CC6637000C0976A /* Emoji Generator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Emoji Generator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5A59701CC6637000C0976A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5F5A59721CC6637000C0976A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F5A59741CC6637000C0976A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5A59791CC6637000C0976A /* Emoji Generator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Emoji Generator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5A597F1CC6637000C0976A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5F5A59801CC6637000C0976A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5F5A59821CC6637000C0976A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5F5A59841CC6637000C0976A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5F5A59861CC6637000C0976A /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		5F5A59881CC6637000C0976A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5F5A598A1CC6637000C0976A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F5A598C1CC6637000C0976A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F5A593F1CC6637000C0976A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A59531CC6637000C0976A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A595E1CC6637000C0976A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A59761CC6637000C0976A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F5A59391CC6637000C0976A = {
+			isa = PBXGroup;
+			children = (
+				5F5A59441CC6637000C0976A /* Emoji Generator */,
+				5F5A59591CC6637000C0976A /* Emoji GeneratorTests */,
+				5F5A59641CC6637000C0976A /* Emoji GeneratorUITests */,
+				5F5A596E1CC6637000C0976A /* Emoji Generator WatchKit App */,
+				5F5A597D1CC6637000C0976A /* Emoji Generator WatchKit Extension */,
+				5F5A59431CC6637000C0976A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F5A59431CC6637000C0976A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A59421CC6637000C0976A /* Emoji Generator.app */,
+				5F5A59561CC6637000C0976A /* Emoji GeneratorTests.xctest */,
+				5F5A59611CC6637000C0976A /* Emoji GeneratorUITests.xctest */,
+				5F5A596A1CC6637000C0976A /* Emoji Generator WatchKit App.app */,
+				5F5A59791CC6637000C0976A /* Emoji Generator WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F5A59441CC6637000C0976A /* Emoji Generator */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A59451CC6637000C0976A /* AppDelegate.swift */,
+				5F5A59471CC6637000C0976A /* ViewController.swift */,
+				5F5A59491CC6637000C0976A /* Main.storyboard */,
+				5F5A594C1CC6637000C0976A /* Assets.xcassets */,
+				5F5A594E1CC6637000C0976A /* LaunchScreen.storyboard */,
+				5F5A59511CC6637000C0976A /* Info.plist */,
+			);
+			path = "Emoji Generator";
+			sourceTree = "<group>";
+		};
+		5F5A59591CC6637000C0976A /* Emoji GeneratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A595A1CC6637000C0976A /* Emoji_GeneratorTests.swift */,
+				5F5A595C1CC6637000C0976A /* Info.plist */,
+			);
+			path = "Emoji GeneratorTests";
+			sourceTree = "<group>";
+		};
+		5F5A59641CC6637000C0976A /* Emoji GeneratorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A59651CC6637000C0976A /* Emoji_GeneratorUITests.swift */,
+				5F5A59671CC6637000C0976A /* Info.plist */,
+			);
+			path = "Emoji GeneratorUITests";
+			sourceTree = "<group>";
+		};
+		5F5A596E1CC6637000C0976A /* Emoji Generator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A596F1CC6637000C0976A /* Interface.storyboard */,
+				5F5A59721CC6637000C0976A /* Assets.xcassets */,
+				5F5A59741CC6637000C0976A /* Info.plist */,
+			);
+			path = "Emoji Generator WatchKit App";
+			sourceTree = "<group>";
+		};
+		5F5A597D1CC6637000C0976A /* Emoji Generator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A59801CC6637000C0976A /* InterfaceController.swift */,
+				5F5A59821CC6637000C0976A /* ExtensionDelegate.swift */,
+				5F5A59841CC6637000C0976A /* NotificationController.swift */,
+				5F5A59861CC6637000C0976A /* GlanceController.swift */,
+				5F5A59881CC6637000C0976A /* ComplicationController.swift */,
+				5F5A598A1CC6637000C0976A /* Assets.xcassets */,
+				5F5A598C1CC6637000C0976A /* Info.plist */,
+				5F5A597E1CC6637000C0976A /* Supporting Files */,
+			);
+			path = "Emoji Generator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5F5A597E1CC6637000C0976A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F5A597F1CC6637000C0976A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F5A59411CC6637000C0976A /* Emoji Generator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5A59971CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji Generator" */;
+			buildPhases = (
+				5F5A593E1CC6637000C0976A /* Sources */,
+				5F5A593F1CC6637000C0976A /* Frameworks */,
+				5F5A59401CC6637000C0976A /* Resources */,
+				5F5A59961CC6637000C0976A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F5A596D1CC6637000C0976A /* PBXTargetDependency */,
+			);
+			name = "Emoji Generator";
+			productName = "Emoji Generator";
+			productReference = 5F5A59421CC6637000C0976A /* Emoji Generator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F5A59551CC6637000C0976A /* Emoji GeneratorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5A599A1CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji GeneratorTests" */;
+			buildPhases = (
+				5F5A59521CC6637000C0976A /* Sources */,
+				5F5A59531CC6637000C0976A /* Frameworks */,
+				5F5A59541CC6637000C0976A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F5A59581CC6637000C0976A /* PBXTargetDependency */,
+			);
+			name = "Emoji GeneratorTests";
+			productName = "Emoji GeneratorTests";
+			productReference = 5F5A59561CC6637000C0976A /* Emoji GeneratorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F5A59601CC6637000C0976A /* Emoji GeneratorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5A599D1CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji GeneratorUITests" */;
+			buildPhases = (
+				5F5A595D1CC6637000C0976A /* Sources */,
+				5F5A595E1CC6637000C0976A /* Frameworks */,
+				5F5A595F1CC6637000C0976A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F5A59631CC6637000C0976A /* PBXTargetDependency */,
+			);
+			name = "Emoji GeneratorUITests";
+			productName = "Emoji GeneratorUITests";
+			productReference = 5F5A59611CC6637000C0976A /* Emoji GeneratorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5F5A59691CC6637000C0976A /* Emoji Generator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5A59931CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji Generator WatchKit App" */;
+			buildPhases = (
+				5F5A59681CC6637000C0976A /* Resources */,
+				5F5A59921CC6637000C0976A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F5A597C1CC6637000C0976A /* PBXTargetDependency */,
+			);
+			name = "Emoji Generator WatchKit App";
+			productName = "Emoji Generator WatchKit App";
+			productReference = 5F5A596A1CC6637000C0976A /* Emoji Generator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5F5A59781CC6637000C0976A /* Emoji Generator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F5A598F1CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji Generator WatchKit Extension" */;
+			buildPhases = (
+				5F5A59751CC6637000C0976A /* Sources */,
+				5F5A59761CC6637000C0976A /* Frameworks */,
+				5F5A59771CC6637000C0976A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Emoji Generator WatchKit Extension";
+			productName = "Emoji Generator WatchKit Extension";
+			productReference = 5F5A59791CC6637000C0976A /* Emoji Generator WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F5A593A1CC6637000C0976A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pasha Cretsu";
+				TargetAttributes = {
+					5F5A59411CC6637000C0976A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5F5A59551CC6637000C0976A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5F5A59411CC6637000C0976A;
+					};
+					5F5A59601CC6637000C0976A = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5F5A59411CC6637000C0976A;
+					};
+					5F5A59691CC6637000C0976A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5F5A59781CC6637000C0976A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 5F5A593D1CC6637000C0976A /* Build configuration list for PBXProject "Emoji Generator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F5A59391CC6637000C0976A;
+			productRefGroup = 5F5A59431CC6637000C0976A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F5A59411CC6637000C0976A /* Emoji Generator */,
+				5F5A59551CC6637000C0976A /* Emoji GeneratorTests */,
+				5F5A59601CC6637000C0976A /* Emoji GeneratorUITests */,
+				5F5A59691CC6637000C0976A /* Emoji Generator WatchKit App */,
+				5F5A59781CC6637000C0976A /* Emoji Generator WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F5A59401CC6637000C0976A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5A59501CC6637000C0976A /* LaunchScreen.storyboard in Resources */,
+				5F5A594D1CC6637000C0976A /* Assets.xcassets in Resources */,
+				5F5A594B1CC6637000C0976A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A59541CC6637000C0976A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A595F1CC6637000C0976A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A59681CC6637000C0976A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5A59731CC6637000C0976A /* Assets.xcassets in Resources */,
+				5F5A59711CC6637000C0976A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A59771CC6637000C0976A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5A598B1CC6637000C0976A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F5A593E1CC6637000C0976A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5A59481CC6637000C0976A /* ViewController.swift in Sources */,
+				5F5A59461CC6637000C0976A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A59521CC6637000C0976A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5A595B1CC6637000C0976A /* Emoji_GeneratorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A595D1CC6637000C0976A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5A59661CC6637000C0976A /* Emoji_GeneratorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F5A59751CC6637000C0976A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F5A59851CC6637000C0976A /* NotificationController.swift in Sources */,
+				5F5A59831CC6637000C0976A /* ExtensionDelegate.swift in Sources */,
+				5F5A59891CC6637000C0976A /* ComplicationController.swift in Sources */,
+				5F5A59811CC6637000C0976A /* InterfaceController.swift in Sources */,
+				5F5A59871CC6637000C0976A /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F5A59581CC6637000C0976A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F5A59411CC6637000C0976A /* Emoji Generator */;
+			targetProxy = 5F5A59571CC6637000C0976A /* PBXContainerItemProxy */;
+		};
+		5F5A59631CC6637000C0976A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F5A59411CC6637000C0976A /* Emoji Generator */;
+			targetProxy = 5F5A59621CC6637000C0976A /* PBXContainerItemProxy */;
+		};
+		5F5A596D1CC6637000C0976A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F5A59691CC6637000C0976A /* Emoji Generator WatchKit App */;
+			targetProxy = 5F5A596C1CC6637000C0976A /* PBXContainerItemProxy */;
+		};
+		5F5A597C1CC6637000C0976A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F5A59781CC6637000C0976A /* Emoji Generator WatchKit Extension */;
+			targetProxy = 5F5A597B1CC6637000C0976A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F5A59491CC6637000C0976A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F5A594A1CC6637000C0976A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F5A594E1CC6637000C0976A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F5A594F1CC6637000C0976A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5F5A596F1CC6637000C0976A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F5A59701CC6637000C0976A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F5A598D1CC6637000C0976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F5A598E1CC6637000C0976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F5A59901CC6637000C0976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Emoji Generator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-Generator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5F5A59911CC6637000C0976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Emoji Generator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-Generator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5F5A59941CC6637000C0976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Emoji_Generator_WatchKit_Extension;
+				INFOPLIST_FILE = "Emoji Generator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-Generator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5F5A59951CC6637000C0976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Emoji_Generator_WatchKit_Extension;
+				INFOPLIST_FILE = "Emoji Generator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-Generator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5F5A59981CC6637000C0976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Emoji Generator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F5A59991CC6637000C0976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Emoji Generator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-Generator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5F5A599B1CC6637000C0976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Emoji GeneratorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emoji Generator.app/Emoji Generator";
+			};
+			name = Debug;
+		};
+		5F5A599C1CC6637000C0976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Emoji GeneratorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-GeneratorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Emoji Generator.app/Emoji Generator";
+			};
+			name = Release;
+		};
+		5F5A599E1CC6637000C0976A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Emoji GeneratorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Emoji Generator";
+			};
+			name = Debug;
+		};
+		5F5A599F1CC6637000C0976A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Emoji GeneratorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Emoji-GeneratorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Emoji Generator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F5A593D1CC6637000C0976A /* Build configuration list for PBXProject "Emoji Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5A598D1CC6637000C0976A /* Debug */,
+				5F5A598E1CC6637000C0976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F5A598F1CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji Generator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5A59901CC6637000C0976A /* Debug */,
+				5F5A59911CC6637000C0976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F5A59931CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji Generator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5A59941CC6637000C0976A /* Debug */,
+				5F5A59951CC6637000C0976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F5A59971CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji Generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5A59981CC6637000C0976A /* Debug */,
+				5F5A59991CC6637000C0976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F5A599A1CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji GeneratorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5A599B1CC6637000C0976A /* Debug */,
+				5F5A599C1CC6637000C0976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5F5A599D1CC6637000C0976A /* Build configuration list for PBXNativeTarget "Emoji GeneratorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F5A599E1CC6637000C0976A /* Debug */,
+				5F5A599F1CC6637000C0976A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F5A593A1CC6637000C0976A /* Project object */;
+}
