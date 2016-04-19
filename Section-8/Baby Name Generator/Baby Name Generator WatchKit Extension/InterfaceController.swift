@@ -24,6 +24,7 @@ class InterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        chooseName()
     }
     
 
@@ -58,6 +59,8 @@ class InterfaceController: WKInterfaceController {
         }
         
         isGirl = !isGirl
+        
+        chooseName()
     }
     
     
