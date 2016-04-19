@@ -24,6 +24,11 @@ class InterfaceController: WKInterfaceController {
     var arrayCheese =   ["Chedder", "Mozzarella", "Brie", "White Chedder", "Swiss"]
     var arrayTops =     ["Onions", "Tomato", "Lettuce", "Pickles", "Olives"]
     
+    var numberBread : Int = 0
+    var numberMeat : Int = 0
+    var numberCheese : Int = 0
+    var numberTops : Int = 0
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
