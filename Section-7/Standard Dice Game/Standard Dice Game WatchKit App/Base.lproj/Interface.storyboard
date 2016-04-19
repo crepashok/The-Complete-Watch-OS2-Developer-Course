@@ -1,21 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Standard_Dice_Game_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <separator alignment="left" id="zVr-ZB-l2T"/>
+                        <label width="136" height="31.5" alignment="left" text="Dice: 6s" id="bXg-EW-EBI"/>
+                        <separator alignment="left" id="CSn-Fs-yCn"/>
+                        <label width="136" height="31.5" alignment="left" text="Result: 0" id="y1a-Lm-0Es"/>
+                        <separator alignment="left" id="hWC-RI-xwH"/>
+                        <button width="1" alignment="left" title="Dice: 6s" id="C8i-F6-K3b"/>
+                        <separator alignment="left" id="6eH-lW-ckp"/>
+                        <button width="1" alignment="left" title="Roll" id="Eu8-HS-tEt"/>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="target">
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="Standard_Dice_Game_WatchKit_App" customModuleProvider="target">
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y"/>
                         <group alignment="left" id="uCw-4Q-Ouw"/>
@@ -44,7 +55,7 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="Standard_Dice_Game_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
