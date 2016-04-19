@@ -38,6 +38,7 @@ class InterfaceController: WKInterfaceController {
 
     
     @IBAction func btnDiceSelectClick() {
+        increaseDiceArrayNumber()
     }
     
     
@@ -45,8 +46,14 @@ class InterfaceController: WKInterfaceController {
     }
     
     func randomizeTheNumber() {
-    
         result = Int(arc4random_uniform(UInt32(diceNumberArray[diceSelect])))
+    }
+    
+    func increaseDiceArrayNumber()  {
+        diceSelect += 1
         
+        if diceSelect >= diceNumberArray.count - 1 {
+            diceSelect = 0
+        }
     }
 }
