@@ -660,7 +660,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Quote Of The Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qlicks.test;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Quote-Of-The-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -671,7 +671,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Quote Of The Day/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.qlicks.test;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Quote-Of-The-Day";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -741,6 +741,7 @@
 				5F5A59F81CC6684F00C0976A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F5A59FA1CC6684F00C0976A /* Build configuration list for PBXNativeTarget "Quote Of The Day WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -749,6 +750,7 @@
 				5F5A59FC1CC6684F00C0976A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F5A59FE1CC6684F00C0976A /* Build configuration list for PBXNativeTarget "Quote Of The Day" */ = {
 			isa = XCConfigurationList;
@@ -757,6 +759,7 @@
 				5F5A5A001CC6684F00C0976A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F5A5A011CC6684F00C0976A /* Build configuration list for PBXNativeTarget "Quote Of The DayTests" */ = {
 			isa = XCConfigurationList;
@@ -765,6 +768,7 @@
 				5F5A5A031CC6684F00C0976A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F5A5A041CC6684F00C0976A /* Build configuration list for PBXNativeTarget "Quote Of The DayUITests" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +777,7 @@
 				5F5A5A061CC6684F00C0976A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

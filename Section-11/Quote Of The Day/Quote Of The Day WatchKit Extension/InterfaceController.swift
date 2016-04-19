@@ -80,6 +80,12 @@ class InterfaceController: WKInterfaceController {
     }
     
     func displayRandomQuote() {
+        changeTextColor()
         lblQuote.setText("\(quoteArray[numberQuote])")
+    }
+    
+    func changeTextColor() {
+        let whiteIndex : Float = Float((arc4random_uniform(80) % 50) + 50) / 100.0
+        lblQuote.setTextColor(UIColor.init(white: CGFloat(whiteIndex), alpha: 1.0))
     }
 }
