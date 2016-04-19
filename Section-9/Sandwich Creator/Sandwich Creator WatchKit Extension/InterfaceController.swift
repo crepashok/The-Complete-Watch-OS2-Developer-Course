@@ -23,6 +23,7 @@ class InterfaceController: WKInterfaceController {
     var arrayMeat =     ["Ham", "Turkey", "Salami", "Cold Cut", "Chicken"]
     var arrayCheese =   ["Chedder", "Mozzarella", "Brie", "Havarti", "Swiss"]
     var arrayTops =     ["Onions", "Tomato", "Lettuce", "Pickles", "Olives"]
+    var arrayColors =   [UIColor.redColor(), UIColor.greenColor(), UIColor.purpleColor(), UIColor.lightGrayColor(), UIColor.orangeColor(), UIColor.cyanColor()]
     
     var numberBread : Int = 0
     var numberMeat : Int = 0
@@ -60,5 +61,9 @@ class InterfaceController: WKInterfaceController {
         lblMeat.setText("Meat: \(arrayBread[numberMeat])")
         lblCheese.setText("Cheese: \(arrayBread[numberCheese])")
         lblTops.setText("Tops: \(arrayBread[numberTops])")
+        
+        let attString = NSMutableAttributedString(string: "Create!")
+        attString.setAttributes([NSForegroundColorAttributeName: arrayColors[Int(arc4random_uniform(UInt32(arrayBread.count)))]], range: NSMakeRange(0, attString.length))
+        btnCreate.setAttributedTitle(attString)
     }
 }
