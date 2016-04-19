@@ -8,9 +8,16 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Emoji_Generator_WatchKit_App" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Emoji_Generator_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="113" alignment="left" text="🐝" textAlignment="center" id="DfZ-Uk-INw">
+                            <fontDescription key="font" type="system" pointSize="110"/>
+                        </label>
+                        <button width="1" alignment="left" title="Generate!" id="eey-bc-3tj"/>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="235" y="347.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
