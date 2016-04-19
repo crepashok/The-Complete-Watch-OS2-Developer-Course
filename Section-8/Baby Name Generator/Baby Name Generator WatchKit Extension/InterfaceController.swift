@@ -37,7 +37,7 @@ class InterfaceController: WKInterfaceController {
     
 
     @IBAction func btnAnotherNameClick() {
-        
+        chooseName()
     }
     
     
@@ -57,6 +57,18 @@ class InterfaceController: WKInterfaceController {
         }
         
         isGirl = !isGirl
+    }
+    
+    
+    func chooseName() {
+        
+        if isGirl == true {
+        
+        } else {
+        
+            
+        }
+        
     }
     
 }
