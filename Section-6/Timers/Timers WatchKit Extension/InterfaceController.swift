@@ -30,18 +30,20 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func btnStartStopClick() {
-        tmrTimer.start()
+        startTimerLogic()
     }
     
     
     @IBAction func btnResetClick() {
-        tmrTimer.stop()
+        resetLogic()
     }
     
     func startTimerLogic() {
     
         if isStart == false {
-        
+            
+            tmrTimer.setDate(NSDate())
+            
             tmrTimer.start()
             
             btnStartStop.setTitle("Stop")
@@ -56,6 +58,13 @@ class InterfaceController: WKInterfaceController {
         
         isStart = !isStart
         
+    }
+    
+    func resetLogic() {
+        tmrTimer.stop()
+        btnStartStop.setTitle("Start")
+        isStart = false
+        tmrTimer.setDate(NSDate())
     }
 
 }
