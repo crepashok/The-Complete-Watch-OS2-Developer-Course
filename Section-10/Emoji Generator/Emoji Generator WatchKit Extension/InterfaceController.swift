@@ -15,6 +15,8 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var lblEmojiDisplay: WKInterfaceLabel!
     @IBOutlet var btnGenerate: WKInterfaceButton!
     
+    var emojiArray = ["🐝", "🐏", "🐅", "🕊", "🐌", "🐜", "🐳", "🐊", "🐢", "🐖", "🐿", "🐇", "🐈", "🐩", "🐪", "🐘", "🐎", "🐑", "🕷", "🦀"]
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
