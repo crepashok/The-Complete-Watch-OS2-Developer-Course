@@ -11,9 +11,9 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Standard_Dice_Game_WatchKit_App" customModuleProvider="target">
                     <items>
                         <separator alignment="left" id="zVr-ZB-l2T"/>
-                        <label width="136" height="31.5" alignment="left" text="Dice: 6s" id="bXg-EW-EBI"/>
+                        <label width="136" height="31.5" alignment="left" text="Dice: 6s" textAlignment="center" id="bXg-EW-EBI"/>
                         <separator alignment="left" id="CSn-Fs-yCn"/>
-                        <label width="136" height="31.5" alignment="left" text="Result: 0" id="y1a-Lm-0Es"/>
+                        <label width="136" height="31.5" alignment="left" text="Result: 0" textAlignment="center" id="y1a-Lm-0Es"/>
                         <separator alignment="left" id="hWC-RI-xwH"/>
                         <button width="1" alignment="left" title="Dice: 6s" id="C8i-F6-K3b">
                             <connections>

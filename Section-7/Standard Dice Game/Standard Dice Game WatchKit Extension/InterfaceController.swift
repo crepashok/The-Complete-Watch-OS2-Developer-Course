@@ -49,13 +49,22 @@ class InterfaceController: WKInterfaceController {
     func randomizeTheNumber() {
         result = Int(arc4random_uniform(UInt32(diceNumberArray[diceSelect])))
         
+        if result == 0 {
+            
+            result = Int(arc4random_uniform(UInt32(diceNumberArray[diceSelect])))
+            
+            if result == 0 {
+                result = 1
+            }
+        }
+        
         printResult()
     }
     
     func increaseDiceArrayNumber()  {
         diceSelect += 1
         
-        if diceSelect >= diceNumberArray.count - 1 {
+        if diceSelect >= diceNumberArray.count {
             diceSelect = 0
         }
         
