@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Quote_Of_The_Day_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" height="110.5" alignment="left" text="Quote" textAlignment="center" id="b7X-s0-K0D"/>
+                        <label width="1" height="110.5" alignment="left" text="Quote" textAlignment="center" numberOfLines="0" id="b7X-s0-K0D"/>
                         <button width="1" alignment="left" title="Quote" id="Opi-L5-pOy">
                             <connections>
                                 <action selector="btnQuoteClick" destination="AgC-eL-Hgc" id="4RL-vr-fpG"/>
