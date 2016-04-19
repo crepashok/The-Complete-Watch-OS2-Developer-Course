@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FA6F0F71CC6182600508E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F0F61CC6182600508E55 /* AppDelegate.swift */; };
+		5FA6F0F91CC6182600508E55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F0F81CC6182600508E55 /* ViewController.swift */; };
+		5FA6F0FC1CC6182600508E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6F0FA1CC6182600508E55 /* Main.storyboard */; };
+		5FA6F0FE1CC6182600508E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6F0FD1CC6182600508E55 /* Assets.xcassets */; };
+		5FA6F1011CC6182600508E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6F0FF1CC6182600508E55 /* LaunchScreen.storyboard */; };
+		5FA6F10C1CC6182600508E55 /* Sandwich_CreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F10B1CC6182600508E55 /* Sandwich_CreatorTests.swift */; };
+		5FA6F1171CC6182600508E55 /* Sandwich_CreatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F1161CC6182600508E55 /* Sandwich_CreatorUITests.swift */; };
+		5FA6F11C1CC6182600508E55 /* Sandwich Creator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5FA6F11B1CC6182600508E55 /* Sandwich Creator WatchKit App.app */; };
+		5FA6F1221CC6182600508E55 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6F1201CC6182600508E55 /* Interface.storyboard */; };
+		5FA6F1241CC6182600508E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6F1231CC6182600508E55 /* Assets.xcassets */; };
+		5FA6F12B1CC6182600508E55 /* Sandwich Creator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5FA6F12A1CC6182600508E55 /* Sandwich Creator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5FA6F1321CC6182600508E55 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F1311CC6182600508E55 /* InterfaceController.swift */; };
+		5FA6F1341CC6182600508E55 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F1331CC6182600508E55 /* ExtensionDelegate.swift */; };
+		5FA6F1361CC6182600508E55 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F1351CC6182600508E55 /* NotificationController.swift */; };
+		5FA6F1381CC6182600508E55 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F1371CC6182600508E55 /* GlanceController.swift */; };
+		5FA6F13A1CC6182600508E55 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA6F1391CC6182600508E55 /* ComplicationController.swift */; };
+		5FA6F13C1CC6182600508E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA6F13B1CC6182600508E55 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FA6F1081CC6182600508E55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FA6F0EB1CC6182600508E55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA6F0F21CC6182600508E55;
+			remoteInfo = "Sandwich Creator";
+		};
+		5FA6F1131CC6182600508E55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FA6F0EB1CC6182600508E55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA6F0F21CC6182600508E55;
+			remoteInfo = "Sandwich Creator";
+		};
+		5FA6F11D1CC6182600508E55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FA6F0EB1CC6182600508E55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA6F11A1CC6182600508E55;
+			remoteInfo = "Sandwich Creator WatchKit App";
+		};
+		5FA6F12C1CC6182600508E55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FA6F0EB1CC6182600508E55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FA6F1291CC6182600508E55;
+			remoteInfo = "Sandwich Creator WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5FA6F1431CC6182600508E55 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5FA6F12B1CC6182600508E55 /* Sandwich Creator WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1471CC6182600508E55 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5FA6F11C1CC6182600508E55 /* Sandwich Creator WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5FA6F0F31CC6182600508E55 /* Sandwich Creator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sandwich Creator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA6F0F61CC6182600508E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FA6F0F81CC6182600508E55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FA6F0FB1CC6182600508E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FA6F0FD1CC6182600508E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FA6F1001CC6182600508E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FA6F1021CC6182600508E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA6F1071CC6182600508E55 /* Sandwich CreatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sandwich CreatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA6F10B1CC6182600508E55 /* Sandwich_CreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandwich_CreatorTests.swift; sourceTree = "<group>"; };
+		5FA6F10D1CC6182600508E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA6F1121CC6182600508E55 /* Sandwich CreatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sandwich CreatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA6F1161CC6182600508E55 /* Sandwich_CreatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sandwich_CreatorUITests.swift; sourceTree = "<group>"; };
+		5FA6F1181CC6182600508E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA6F11B1CC6182600508E55 /* Sandwich Creator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sandwich Creator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA6F1211CC6182600508E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5FA6F1231CC6182600508E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FA6F1251CC6182600508E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FA6F12A1CC6182600508E55 /* Sandwich Creator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sandwich Creator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FA6F1301CC6182600508E55 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5FA6F1311CC6182600508E55 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5FA6F1331CC6182600508E55 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5FA6F1351CC6182600508E55 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5FA6F1371CC6182600508E55 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		5FA6F1391CC6182600508E55 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5FA6F13B1CC6182600508E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FA6F13D1CC6182600508E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FA6F0F01CC6182600508E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1041CC6182600508E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F10F1CC6182600508E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1271CC6182600508E55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FA6F0EA1CC6182600508E55 = {
+			isa = PBXGroup;
+			children = (
+				5FA6F0F51CC6182600508E55 /* Sandwich Creator */,
+				5FA6F10A1CC6182600508E55 /* Sandwich CreatorTests */,
+				5FA6F1151CC6182600508E55 /* Sandwich CreatorUITests */,
+				5FA6F11F1CC6182600508E55 /* Sandwich Creator WatchKit App */,
+				5FA6F12E1CC6182600508E55 /* Sandwich Creator WatchKit Extension */,
+				5FA6F0F41CC6182600508E55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FA6F0F41CC6182600508E55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6F0F31CC6182600508E55 /* Sandwich Creator.app */,
+				5FA6F1071CC6182600508E55 /* Sandwich CreatorTests.xctest */,
+				5FA6F1121CC6182600508E55 /* Sandwich CreatorUITests.xctest */,
+				5FA6F11B1CC6182600508E55 /* Sandwich Creator WatchKit App.app */,
+				5FA6F12A1CC6182600508E55 /* Sandwich Creator WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FA6F0F51CC6182600508E55 /* Sandwich Creator */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6F0F61CC6182600508E55 /* AppDelegate.swift */,
+				5FA6F0F81CC6182600508E55 /* ViewController.swift */,
+				5FA6F0FA1CC6182600508E55 /* Main.storyboard */,
+				5FA6F0FD1CC6182600508E55 /* Assets.xcassets */,
+				5FA6F0FF1CC6182600508E55 /* LaunchScreen.storyboard */,
+				5FA6F1021CC6182600508E55 /* Info.plist */,
+			);
+			path = "Sandwich Creator";
+			sourceTree = "<group>";
+		};
+		5FA6F10A1CC6182600508E55 /* Sandwich CreatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6F10B1CC6182600508E55 /* Sandwich_CreatorTests.swift */,
+				5FA6F10D1CC6182600508E55 /* Info.plist */,
+			);
+			path = "Sandwich CreatorTests";
+			sourceTree = "<group>";
+		};
+		5FA6F1151CC6182600508E55 /* Sandwich CreatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6F1161CC6182600508E55 /* Sandwich_CreatorUITests.swift */,
+				5FA6F1181CC6182600508E55 /* Info.plist */,
+			);
+			path = "Sandwich CreatorUITests";
+			sourceTree = "<group>";
+		};
+		5FA6F11F1CC6182600508E55 /* Sandwich Creator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6F1201CC6182600508E55 /* Interface.storyboard */,
+				5FA6F1231CC6182600508E55 /* Assets.xcassets */,
+				5FA6F1251CC6182600508E55 /* Info.plist */,
+			);
+			path = "Sandwich Creator WatchKit App";
+			sourceTree = "<group>";
+		};
+		5FA6F12E1CC6182600508E55 /* Sandwich Creator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6F1311CC6182600508E55 /* InterfaceController.swift */,
+				5FA6F1331CC6182600508E55 /* ExtensionDelegate.swift */,
+				5FA6F1351CC6182600508E55 /* NotificationController.swift */,
+				5FA6F1371CC6182600508E55 /* GlanceController.swift */,
+				5FA6F1391CC6182600508E55 /* ComplicationController.swift */,
+				5FA6F13B1CC6182600508E55 /* Assets.xcassets */,
+				5FA6F13D1CC6182600508E55 /* Info.plist */,
+				5FA6F12F1CC6182600508E55 /* Supporting Files */,
+			);
+			path = "Sandwich Creator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5FA6F12F1CC6182600508E55 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FA6F1301CC6182600508E55 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FA6F0F21CC6182600508E55 /* Sandwich Creator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA6F1481CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich Creator" */;
+			buildPhases = (
+				5FA6F0EF1CC6182600508E55 /* Sources */,
+				5FA6F0F01CC6182600508E55 /* Frameworks */,
+				5FA6F0F11CC6182600508E55 /* Resources */,
+				5FA6F1471CC6182600508E55 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA6F11E1CC6182600508E55 /* PBXTargetDependency */,
+			);
+			name = "Sandwich Creator";
+			productName = "Sandwich Creator";
+			productReference = 5FA6F0F31CC6182600508E55 /* Sandwich Creator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FA6F1061CC6182600508E55 /* Sandwich CreatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA6F14B1CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich CreatorTests" */;
+			buildPhases = (
+				5FA6F1031CC6182600508E55 /* Sources */,
+				5FA6F1041CC6182600508E55 /* Frameworks */,
+				5FA6F1051CC6182600508E55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA6F1091CC6182600508E55 /* PBXTargetDependency */,
+			);
+			name = "Sandwich CreatorTests";
+			productName = "Sandwich CreatorTests";
+			productReference = 5FA6F1071CC6182600508E55 /* Sandwich CreatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FA6F1111CC6182600508E55 /* Sandwich CreatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA6F14E1CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich CreatorUITests" */;
+			buildPhases = (
+				5FA6F10E1CC6182600508E55 /* Sources */,
+				5FA6F10F1CC6182600508E55 /* Frameworks */,
+				5FA6F1101CC6182600508E55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA6F1141CC6182600508E55 /* PBXTargetDependency */,
+			);
+			name = "Sandwich CreatorUITests";
+			productName = "Sandwich CreatorUITests";
+			productReference = 5FA6F1121CC6182600508E55 /* Sandwich CreatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5FA6F11A1CC6182600508E55 /* Sandwich Creator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA6F1441CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich Creator WatchKit App" */;
+			buildPhases = (
+				5FA6F1191CC6182600508E55 /* Resources */,
+				5FA6F1431CC6182600508E55 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FA6F12D1CC6182600508E55 /* PBXTargetDependency */,
+			);
+			name = "Sandwich Creator WatchKit App";
+			productName = "Sandwich Creator WatchKit App";
+			productReference = 5FA6F11B1CC6182600508E55 /* Sandwich Creator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5FA6F1291CC6182600508E55 /* Sandwich Creator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FA6F1401CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich Creator WatchKit Extension" */;
+			buildPhases = (
+				5FA6F1261CC6182600508E55 /* Sources */,
+				5FA6F1271CC6182600508E55 /* Frameworks */,
+				5FA6F1281CC6182600508E55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sandwich Creator WatchKit Extension";
+			productName = "Sandwich Creator WatchKit Extension";
+			productReference = 5FA6F12A1CC6182600508E55 /* Sandwich Creator WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FA6F0EB1CC6182600508E55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pasha Cretsu";
+				TargetAttributes = {
+					5FA6F0F21CC6182600508E55 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5FA6F1061CC6182600508E55 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5FA6F0F21CC6182600508E55;
+					};
+					5FA6F1111CC6182600508E55 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5FA6F0F21CC6182600508E55;
+					};
+					5FA6F11A1CC6182600508E55 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5FA6F1291CC6182600508E55 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 5FA6F0EE1CC6182600508E55 /* Build configuration list for PBXProject "Sandwich Creator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FA6F0EA1CC6182600508E55;
+			productRefGroup = 5FA6F0F41CC6182600508E55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FA6F0F21CC6182600508E55 /* Sandwich Creator */,
+				5FA6F1061CC6182600508E55 /* Sandwich CreatorTests */,
+				5FA6F1111CC6182600508E55 /* Sandwich CreatorUITests */,
+				5FA6F11A1CC6182600508E55 /* Sandwich Creator WatchKit App */,
+				5FA6F1291CC6182600508E55 /* Sandwich Creator WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FA6F0F11CC6182600508E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA6F1011CC6182600508E55 /* LaunchScreen.storyboard in Resources */,
+				5FA6F0FE1CC6182600508E55 /* Assets.xcassets in Resources */,
+				5FA6F0FC1CC6182600508E55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1051CC6182600508E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1101CC6182600508E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1191CC6182600508E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA6F1241CC6182600508E55 /* Assets.xcassets in Resources */,
+				5FA6F1221CC6182600508E55 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1281CC6182600508E55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA6F13C1CC6182600508E55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FA6F0EF1CC6182600508E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA6F0F91CC6182600508E55 /* ViewController.swift in Sources */,
+				5FA6F0F71CC6182600508E55 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1031CC6182600508E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA6F10C1CC6182600508E55 /* Sandwich_CreatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F10E1CC6182600508E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA6F1171CC6182600508E55 /* Sandwich_CreatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FA6F1261CC6182600508E55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA6F1361CC6182600508E55 /* NotificationController.swift in Sources */,
+				5FA6F1341CC6182600508E55 /* ExtensionDelegate.swift in Sources */,
+				5FA6F13A1CC6182600508E55 /* ComplicationController.swift in Sources */,
+				5FA6F1321CC6182600508E55 /* InterfaceController.swift in Sources */,
+				5FA6F1381CC6182600508E55 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FA6F1091CC6182600508E55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA6F0F21CC6182600508E55 /* Sandwich Creator */;
+			targetProxy = 5FA6F1081CC6182600508E55 /* PBXContainerItemProxy */;
+		};
+		5FA6F1141CC6182600508E55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA6F0F21CC6182600508E55 /* Sandwich Creator */;
+			targetProxy = 5FA6F1131CC6182600508E55 /* PBXContainerItemProxy */;
+		};
+		5FA6F11E1CC6182600508E55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA6F11A1CC6182600508E55 /* Sandwich Creator WatchKit App */;
+			targetProxy = 5FA6F11D1CC6182600508E55 /* PBXContainerItemProxy */;
+		};
+		5FA6F12D1CC6182600508E55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FA6F1291CC6182600508E55 /* Sandwich Creator WatchKit Extension */;
+			targetProxy = 5FA6F12C1CC6182600508E55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FA6F0FA1CC6182600508E55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA6F0FB1CC6182600508E55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FA6F0FF1CC6182600508E55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA6F1001CC6182600508E55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5FA6F1201CC6182600508E55 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FA6F1211CC6182600508E55 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FA6F13E1CC6182600508E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FA6F13F1CC6182600508E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FA6F1411CC6182600508E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Sandwich Creator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-Creator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5FA6F1421CC6182600508E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Sandwich Creator WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-Creator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5FA6F1451CC6182600508E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Sandwich_Creator_WatchKit_Extension;
+				INFOPLIST_FILE = "Sandwich Creator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-Creator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5FA6F1461CC6182600508E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Sandwich_Creator_WatchKit_Extension;
+				INFOPLIST_FILE = "Sandwich Creator WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-Creator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5FA6F1491CC6182600508E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Sandwich Creator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-Creator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FA6F14A1CC6182600508E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Sandwich Creator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-Creator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5FA6F14C1CC6182600508E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Sandwich CreatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-CreatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sandwich Creator.app/Sandwich Creator";
+			};
+			name = Debug;
+		};
+		5FA6F14D1CC6182600508E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Sandwich CreatorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-CreatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sandwich Creator.app/Sandwich Creator";
+			};
+			name = Release;
+		};
+		5FA6F14F1CC6182600508E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Sandwich CreatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-CreatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Sandwich Creator";
+			};
+			name = Debug;
+		};
+		5FA6F1501CC6182600508E55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Sandwich CreatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Sandwich-CreatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Sandwich Creator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FA6F0EE1CC6182600508E55 /* Build configuration list for PBXProject "Sandwich Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA6F13E1CC6182600508E55 /* Debug */,
+				5FA6F13F1CC6182600508E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FA6F1401CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich Creator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA6F1411CC6182600508E55 /* Debug */,
+				5FA6F1421CC6182600508E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FA6F1441CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich Creator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA6F1451CC6182600508E55 /* Debug */,
+				5FA6F1461CC6182600508E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FA6F1481CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich Creator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA6F1491CC6182600508E55 /* Debug */,
+				5FA6F14A1CC6182600508E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FA6F14B1CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich CreatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA6F14C1CC6182600508E55 /* Debug */,
+				5FA6F14D1CC6182600508E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FA6F14E1CC6182600508E55 /* Build configuration list for PBXNativeTarget "Sandwich CreatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA6F14F1CC6182600508E55 /* Debug */,
+				5FA6F1501CC6182600508E55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FA6F0EB1CC6182600508E55 /* Project object */;
+}
