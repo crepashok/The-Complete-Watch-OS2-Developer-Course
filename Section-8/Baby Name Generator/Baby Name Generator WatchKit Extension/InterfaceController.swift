@@ -20,6 +20,7 @@ class InterfaceController: WKInterfaceController {
     var nameGirlArray = ["Jane", "Joy", "Michelle", "Ashley", "Nataly", "Vika", "Nastya", "Iryna", "Olha", "Viorica", "Ljudmila", "Liana", "Joanne", "Katya", "Sveta", "Ljuda", "Sofia", "Yana"]
     
     var isGirl : Bool = true
+    var randomIndex : Int = 0
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -62,10 +63,15 @@ class InterfaceController: WKInterfaceController {
     
     func chooseName() {
         
-        if isGirl == true {
+        if isGirl == false {
+            
+            randomIndex = Int(arc4random_uniform(UInt32(nameBoyArray.count - 1)))
+            lblName.setText("\(nameBoyArray[randomIndex])")
         
         } else {
-        
+            
+            randomIndex = Int(arc4random_uniform(UInt32(nameGirlArray.count - 1)))
+            lblName.setText("\(nameGirlArray[randomIndex])")
             
         }
         
