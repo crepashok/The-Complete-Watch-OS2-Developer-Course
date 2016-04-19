@@ -22,6 +22,9 @@ class InterfaceController: WKInterfaceController {
     var isGirl : Bool = true
     var randomIndex : Int = 0
     
+    var colorGirl = UIColor.redColor()
+    var colorBoy = UIColor.blueColor()
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         chooseName()
@@ -49,14 +52,10 @@ class InterfaceController: WKInterfaceController {
     
     
     func chooseGirlOrBoy() {
-        if isGirl == true {
         
-            btnBoyOrGirl.setTitle("Boy")
-            
-        } else {
+        let newName : String = isGirl == true ? "Boy" : "Girl"
         
-            btnBoyOrGirl.setTitle("Girl")
-        }
+        btnBoyOrGirl.setTitle(newName)
         
         isGirl = !isGirl
         
@@ -66,17 +65,27 @@ class InterfaceController: WKInterfaceController {
     
     func chooseName() {
         
+        var newName : String = ""
+        
         if isGirl == false {
             
             randomIndex = Int(arc4random_uniform(UInt32(nameBoyArray.count - 1)))
-            lblName.setText("\(nameBoyArray[randomIndex])")
+            newName = nameBoyArray[randomIndex]
         
         } else {
             
             randomIndex = Int(arc4random_uniform(UInt32(nameGirlArray.count - 1)))
-            lblName.setText("\(nameGirlArray[randomIndex])")
+            newName = nameGirlArray[randomIndex]
             
         }
+        
+        let newColor = (isGirl == false) ? colorBoy : colorGirl
+        
+        let attString = NSMutableAttributedString(string: newName)
+        
+        attString.setAttributes([NSForegroundColorAttributeName: newColor], range: NSMakeRange(0, newName.characters.count))
+        
+        lblName.setAttributedText(attString)
         
     }
     

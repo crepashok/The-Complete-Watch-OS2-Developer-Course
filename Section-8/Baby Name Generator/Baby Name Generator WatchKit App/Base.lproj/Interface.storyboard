@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Baby_Name_Generator_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="54.5" alignment="left" text="Name" textAlignment="center" id="XBX-y7-fjR"/>
+                        <label width="1" height="54.5" alignment="left" text="Name" textAlignment="center" id="XBX-y7-fjR"/>
                         <button width="1" alignment="left" title="Another Name" id="j7c-J7-aQ9">
                             <connections>
                                 <action selector="btnAnotherNameClick" destination="AgC-eL-Hgc" id="kk9-wT-nv2"/>
