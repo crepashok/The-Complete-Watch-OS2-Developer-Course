@@ -19,6 +19,7 @@ class InterfaceController: WKInterfaceController {
     var nameBoyArray = ["John", "Blake", "Roy", "Pasha", "Michael", "Vova", "Vasya", "Serhiy", "Slavik", "Vadim", "Bohdan", "Sasha", "Yulik", "Dyma", "Vladyk", "Mark", "Stive", "Daniel"]
     var nameGirlArray = ["Jane", "Joy", "Michelle", "Ashley", "Nataly", "Vika", "Nastya", "Iryna", "Olha", "Viorica", "Ljudmila", "Liana", "Joanne", "Katya", "Sveta", "Ljuda", "Sofia", "Yana"]
     
+    var isGirl : Bool = true
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -41,7 +42,21 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func btnGirlOrBoyClick() {
+        chooseGirlOrBoy()
+    }
+    
+    
+    func chooseGirlOrBoy() {
+        if isGirl == true {
         
+            btnBoyOrGirl.setTitle("Boy")
+            
+        } else {
+        
+            btnBoyOrGirl.setTitle("Girl")
+        }
+        
+        isGirl = !isGirl
     }
     
 }
