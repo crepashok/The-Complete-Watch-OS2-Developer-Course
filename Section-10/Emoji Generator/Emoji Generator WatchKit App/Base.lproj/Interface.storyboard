@@ -13,8 +13,16 @@
                         <label width="1" height="113" alignment="left" text="🐝" textAlignment="center" id="DfZ-Uk-INw">
                             <fontDescription key="font" type="system" pointSize="110"/>
                         </label>
-                        <button width="1" alignment="left" title="Generate!" id="eey-bc-3tj"/>
+                        <button width="1" alignment="left" title="Generate!" id="eey-bc-3tj">
+                            <connections>
+                                <action selector="btnGenerateClick" destination="AgC-eL-Hgc" id="DqB-W3-rax"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnGenerate" destination="eey-bc-3tj" id="Ut5-fz-4IB"/>
+                        <outlet property="lblEmojiDisplay" destination="DfZ-Uk-INw" id="Qfu-3Y-mzB"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347.5"/>
