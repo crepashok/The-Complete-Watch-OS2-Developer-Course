@@ -15,10 +15,23 @@
                         <separator alignment="left" id="CSn-Fs-yCn"/>
                         <label width="136" height="31.5" alignment="left" text="Result: 0" id="y1a-Lm-0Es"/>
                         <separator alignment="left" id="hWC-RI-xwH"/>
-                        <button width="1" alignment="left" title="Dice: 6s" id="C8i-F6-K3b"/>
+                        <button width="1" alignment="left" title="Dice: 6s" id="C8i-F6-K3b">
+                            <connections>
+                                <action selector="btnDiceSelectClick" destination="AgC-eL-Hgc" id="R4e-cZ-VdG"/>
+                            </connections>
+                        </button>
                         <separator alignment="left" id="6eH-lW-ckp"/>
-                        <button width="1" alignment="left" title="Roll" id="Eu8-HS-tEt"/>
+                        <button width="1" alignment="left" title="Roll" id="Eu8-HS-tEt">
+                            <connections>
+                                <action selector="btnRollClick" destination="AgC-eL-Hgc" id="Adl-oW-ip8"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnDiceSelect" destination="C8i-F6-K3b" id="5Ro-nX-hpJ"/>
+                        <outlet property="lblDiceType" destination="bXg-EW-EBI" id="pVc-AQ-U2h"/>
+                        <outlet property="lblResult" destination="y1a-Lm-0Es" id="7NP-C9-VRy"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
