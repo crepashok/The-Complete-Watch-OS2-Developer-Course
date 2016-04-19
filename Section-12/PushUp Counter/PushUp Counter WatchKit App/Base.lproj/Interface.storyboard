@@ -12,9 +12,20 @@
                     <items>
                         <button width="1" height="111.5" alignment="left" title="0" id="7Eb-44-Pae">
                             <fontDescription key="font" type="system" pointSize="90"/>
+                            <connections>
+                                <action selector="btnRepsClick" destination="AgC-eL-Hgc" id="Ikc-9r-zAx"/>
+                            </connections>
                         </button>
-                        <button width="1" alignment="left" title="Max: 5" id="ex6-G7-V0y"/>
+                        <button width="1" alignment="left" title="Max: 5" id="ex6-G7-V0y">
+                            <connections>
+                                <action selector="btnMaxClick" destination="AgC-eL-Hgc" id="seG-PP-I02"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnMax" destination="ex6-G7-V0y" id="1Jf-He-oSp"/>
+                        <outlet property="btnReps" destination="7Eb-44-Pae" id="Wtb-7p-VuK"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="348"/>
