@@ -19,6 +19,7 @@ class InterfaceController: WKInterfaceController {
     
     var diceNumberArray = [2, 4, 6, 8, 10, 12, 20, 50, 100]
     var result : Int = 0
+    var diceSelect : Int = 2
     
     
     override func awakeWithContext(context: AnyObject?) {
@@ -41,5 +42,11 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func btnRollClick() {
+    }
+    
+    func randomizeTheNumber() {
+    
+        result = Int(arc4random_uniform(UInt32(diceNumberArray[diceSelect])))
+        
     }
 }
