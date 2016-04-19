@@ -43,20 +43,13 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func btnRollClick() {
+        randomizeTheNumber()
     }
     
     func randomizeTheNumber() {
         result = Int(arc4random_uniform(UInt32(diceNumberArray[diceSelect])))
         
         printResult()
-    }
-    
-    func printDice() {
-        lblDiceType.setText("Dice: \(diceNumberArray[diceSelect])s")
-    }
-    
-    func printResult() {
-        lblResult.setText("Result: \(result)")
     }
     
     func increaseDiceArrayNumber()  {
@@ -67,5 +60,14 @@ class InterfaceController: WKInterfaceController {
         }
         
         printDice()
+    }
+    
+    func printDice() {
+        lblDiceType.setText("Dice: \(diceNumberArray[diceSelect])s")
+        btnDiceSelect.setTitle("Dice: \(diceNumberArray[diceSelect])s")
+    }
+    
+    func printResult() {
+        lblResult.setText("Result: \(result)")
     }
 }
