@@ -16,6 +16,9 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var lblName: WKInterfaceLabel!
     @IBOutlet var btnBoyOrGirl: WKInterfaceButton!
     
+    var nameBoyArray = ["John", "Blake", "Roy", "Pasha", "Michael", "Vova", "Vasya", "Serhiy", "Slavik", "Vadim", "Bohdan", "Sasha", "Yulik", "Dyma", "Vladyk", "Mark", "Stive", "Daniel"]
+    var nameGirlArray = ["Jane", "Joy", "Michelle", "Ashley", "Nataly", "Vika", "Nastya", "Iryna", "Olha", "Viorica", "Ljudmila", "Liana", "Joanne", "Katya", "Sveta", "Ljuda", "Sofia", "Yana"]
+    
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
