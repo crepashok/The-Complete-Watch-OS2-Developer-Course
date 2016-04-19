@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Standard Dice Game WatchKit App (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Standard Dice Game WatchKit App (Glance).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Standard Dice Game WatchKit App (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Standard Dice Game WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Standard Dice Game.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5F8D82C91CC601BF0087689D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F8D82DD1CC601C00087689D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F8D82E81CC601C00087689D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F8D82F11CC601C00087689D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
