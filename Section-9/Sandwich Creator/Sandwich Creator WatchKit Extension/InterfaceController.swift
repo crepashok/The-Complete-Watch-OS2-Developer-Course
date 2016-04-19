@@ -50,8 +50,14 @@ class InterfaceController: WKInterfaceController {
         numberMeat = Int(arc4random_uniform(UInt32(arrayMeat.count)))
         numberCheese = Int(arc4random_uniform(UInt32(arrayCheese.count)))
         numberTops = Int(arc4random_uniform(UInt32(arrayTops.count)))
+        
+        printSandwich()
     }
     
     func printSandwich() {
+        lblBread.setText("Bread: \(arrayBread[numberBread])")
+        lblMeat.setText("Meat: \(arrayBread[numberMeat])")
+        lblCheese.setText("Cheese: \(arrayBread[numberCheese])")
+        lblTops.setText("Tops: \(arrayBread[numberTops])")
     }
 }
