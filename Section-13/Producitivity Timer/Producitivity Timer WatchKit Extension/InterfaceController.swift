@@ -18,6 +18,7 @@ class InterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        resetTimer()
     }
 
     override func willActivate() {
@@ -29,12 +30,22 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnStartClick() {
-        
+        startTimer()
     }
     
     
     @IBAction func btnResetClick() {
-        
+        resetTimer()
+    }
+    
+    func startTimer() {
+        tmrTimer.setDate(NSDate(timeIntervalSinceNow: productivityTimeInterval))
+        tmrTimer.start()
+    }
+    
+    func resetTimer() {
+        tmrTimer.setDate(NSDate(timeIntervalSinceNow: productivityTimeInterval))
+        tmrTimer.stop()
     }
     
 }
