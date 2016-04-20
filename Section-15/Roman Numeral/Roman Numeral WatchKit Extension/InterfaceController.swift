@@ -22,6 +22,7 @@ class InterfaceController: WKInterfaceController {
     var romanNumeralArray = ["I", "V", "X", "L", "C", "D", "M"]
     var randomArrayNumber : Int = 0
     var correctAnswerArray = ["1", "5", "10", "15", "100", "500", "1000"]
+    var colorChange : Int = 0
     
     
     override func awakeWithContext(context: AnyObject?) {
@@ -62,12 +63,14 @@ class InterfaceController: WKInterfaceController {
     
     func printButtons() {
         
-        var incorrectAnswer : Int = randomArrayNumber
+        var incorrectAnswer : Int = 0
+        
+        incorrectAnswer = randomArrayNumber
         
         if buttonCorrect == 0 {
             btnAnswer0.setTitle("\(correctAnswerArray[randomArrayNumber])")
             
-            if randomArrayNumber == correctAnswerArray.count {
+            if randomArrayNumber == (romanNumeralArray.count - 1) {
                 incorrectAnswer = 0
             }
             
@@ -77,13 +80,13 @@ class InterfaceController: WKInterfaceController {
         if buttonCorrect == 1 {
             btnAnswer1.setTitle("\(correctAnswerArray[randomArrayNumber])")
             
-            if randomArrayNumber == correctAnswerArray.count {
+            if randomArrayNumber == (romanNumeralArray.count - 1) {
                 incorrectAnswer = 0
             }
             
             btnAnswer0.setTitle("\(correctAnswerArray[(incorrectAnswer + 1)])")
         }
-        addScore()
+        //addScore()
     }
     
     func addScore() {
@@ -111,6 +114,33 @@ class InterfaceController: WKInterfaceController {
     
     func reset() {
         randomizeNumbers()
+        changeTheColorOfRomanNumeral()
+    }
+    
+    func changeTheColorOfRomanNumeral() {
+        if colorChange == 0 {
+            lblRomanNumber.setTextColor(UIColor.whiteColor())
+        } else if colorChange == 1 {
+            lblRomanNumber.setTextColor(UIColor.orangeColor())
+        } else if colorChange == 2 {
+            lblRomanNumber.setTextColor(UIColor.purpleColor())
+        } else if colorChange == 3 {
+            lblRomanNumber.setTextColor(UIColor.greenColor())
+        } else if colorChange == 4 {
+            lblRomanNumber.setTextColor(UIColor.redColor())
+        } else if colorChange == 5 {
+            lblRomanNumber.setTextColor(UIColor.blueColor())
+        } else if colorChange == 6 {
+            lblRomanNumber.setTextColor(UIColor.magentaColor())
+        } else {
+            lblRomanNumber.setTextColor(UIColor.lightGrayColor())
+        }
+        colorChange += 1
+        
+        if colorChange > 6 {
+            colorChange = 0
+        }
+        
     }
     
 }
