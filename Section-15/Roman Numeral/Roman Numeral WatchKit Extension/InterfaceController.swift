@@ -47,10 +47,16 @@ class InterfaceController: WKInterfaceController {
     
     func randomizeArray() {
         randomArrayNumber = Int(arc4random_uniform(UInt32(romanNumeralArray.count)))
+        buttonCorrect = Int(arc4random_uniform(2))
         printRomanNumeral()
+        printButtons()
     }
     
     func printRomanNumeral() {
         lblRomanNumber.setText("\(romanNumeralArray[randomArrayNumber])")
+    }
+    
+    func printButtons() {
+        
     }
 }
