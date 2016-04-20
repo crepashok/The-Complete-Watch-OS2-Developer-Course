@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FC01D191CC78329007EE47F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D181CC78329007EE47F /* AppDelegate.swift */; };
+		5FC01D1B1CC78329007EE47F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D1A1CC78329007EE47F /* ViewController.swift */; };
+		5FC01D1E1CC78329007EE47F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01D1C1CC78329007EE47F /* Main.storyboard */; };
+		5FC01D201CC78329007EE47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01D1F1CC78329007EE47F /* Assets.xcassets */; };
+		5FC01D231CC78329007EE47F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01D211CC78329007EE47F /* LaunchScreen.storyboard */; };
+		5FC01D2E1CC78329007EE47F /* Roman_NumeralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D2D1CC78329007EE47F /* Roman_NumeralTests.swift */; };
+		5FC01D391CC78329007EE47F /* Roman_NumeralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D381CC78329007EE47F /* Roman_NumeralUITests.swift */; };
+		5FC01D3E1CC78329007EE47F /* Roman Numeral WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5FC01D3D1CC78329007EE47F /* Roman Numeral WatchKit App.app */; };
+		5FC01D441CC78329007EE47F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01D421CC78329007EE47F /* Interface.storyboard */; };
+		5FC01D461CC78329007EE47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01D451CC78329007EE47F /* Assets.xcassets */; };
+		5FC01D4D1CC78329007EE47F /* Roman Numeral WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5FC01D4C1CC78329007EE47F /* Roman Numeral WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5FC01D541CC78329007EE47F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D531CC78329007EE47F /* InterfaceController.swift */; };
+		5FC01D561CC78329007EE47F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D551CC78329007EE47F /* ExtensionDelegate.swift */; };
+		5FC01D581CC78329007EE47F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D571CC78329007EE47F /* NotificationController.swift */; };
+		5FC01D5A1CC78329007EE47F /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D591CC78329007EE47F /* GlanceController.swift */; };
+		5FC01D5C1CC78329007EE47F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC01D5B1CC78329007EE47F /* ComplicationController.swift */; };
+		5FC01D5E1CC78329007EE47F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FC01D5D1CC78329007EE47F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FC01D2A1CC78329007EE47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC01D0D1CC78329007EE47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC01D141CC78329007EE47F;
+			remoteInfo = "Roman Numeral";
+		};
+		5FC01D351CC78329007EE47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC01D0D1CC78329007EE47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC01D141CC78329007EE47F;
+			remoteInfo = "Roman Numeral";
+		};
+		5FC01D3F1CC78329007EE47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC01D0D1CC78329007EE47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC01D3C1CC78329007EE47F;
+			remoteInfo = "Roman Numeral WatchKit App";
+		};
+		5FC01D4E1CC78329007EE47F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FC01D0D1CC78329007EE47F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FC01D4B1CC78329007EE47F;
+			remoteInfo = "Roman Numeral WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5FC01D651CC78329007EE47F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5FC01D4D1CC78329007EE47F /* Roman Numeral WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D691CC78329007EE47F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5FC01D3E1CC78329007EE47F /* Roman Numeral WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5FC01D151CC78329007EE47F /* Roman Numeral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roman Numeral.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01D181CC78329007EE47F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FC01D1A1CC78329007EE47F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5FC01D1D1CC78329007EE47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FC01D1F1CC78329007EE47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FC01D221CC78329007EE47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5FC01D241CC78329007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC01D291CC78329007EE47F /* Roman NumeralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roman NumeralTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01D2D1CC78329007EE47F /* Roman_NumeralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roman_NumeralTests.swift; sourceTree = "<group>"; };
+		5FC01D2F1CC78329007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC01D341CC78329007EE47F /* Roman NumeralUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Roman NumeralUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01D381CC78329007EE47F /* Roman_NumeralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roman_NumeralUITests.swift; sourceTree = "<group>"; };
+		5FC01D3A1CC78329007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC01D3D1CC78329007EE47F /* Roman Numeral WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roman Numeral WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01D431CC78329007EE47F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5FC01D451CC78329007EE47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FC01D471CC78329007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC01D4C1CC78329007EE47F /* Roman Numeral WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Roman Numeral WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FC01D521CC78329007EE47F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5FC01D531CC78329007EE47F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5FC01D551CC78329007EE47F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5FC01D571CC78329007EE47F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		5FC01D591CC78329007EE47F /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		5FC01D5B1CC78329007EE47F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		5FC01D5D1CC78329007EE47F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FC01D5F1CC78329007EE47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FC01D121CC78329007EE47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D261CC78329007EE47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D311CC78329007EE47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D491CC78329007EE47F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FC01D0C1CC78329007EE47F = {
+			isa = PBXGroup;
+			children = (
+				5FC01D171CC78329007EE47F /* Roman Numeral */,
+				5FC01D2C1CC78329007EE47F /* Roman NumeralTests */,
+				5FC01D371CC78329007EE47F /* Roman NumeralUITests */,
+				5FC01D411CC78329007EE47F /* Roman Numeral WatchKit App */,
+				5FC01D501CC78329007EE47F /* Roman Numeral WatchKit Extension */,
+				5FC01D161CC78329007EE47F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FC01D161CC78329007EE47F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01D151CC78329007EE47F /* Roman Numeral.app */,
+				5FC01D291CC78329007EE47F /* Roman NumeralTests.xctest */,
+				5FC01D341CC78329007EE47F /* Roman NumeralUITests.xctest */,
+				5FC01D3D1CC78329007EE47F /* Roman Numeral WatchKit App.app */,
+				5FC01D4C1CC78329007EE47F /* Roman Numeral WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FC01D171CC78329007EE47F /* Roman Numeral */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01D181CC78329007EE47F /* AppDelegate.swift */,
+				5FC01D1A1CC78329007EE47F /* ViewController.swift */,
+				5FC01D1C1CC78329007EE47F /* Main.storyboard */,
+				5FC01D1F1CC78329007EE47F /* Assets.xcassets */,
+				5FC01D211CC78329007EE47F /* LaunchScreen.storyboard */,
+				5FC01D241CC78329007EE47F /* Info.plist */,
+			);
+			path = "Roman Numeral";
+			sourceTree = "<group>";
+		};
+		5FC01D2C1CC78329007EE47F /* Roman NumeralTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01D2D1CC78329007EE47F /* Roman_NumeralTests.swift */,
+				5FC01D2F1CC78329007EE47F /* Info.plist */,
+			);
+			path = "Roman NumeralTests";
+			sourceTree = "<group>";
+		};
+		5FC01D371CC78329007EE47F /* Roman NumeralUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01D381CC78329007EE47F /* Roman_NumeralUITests.swift */,
+				5FC01D3A1CC78329007EE47F /* Info.plist */,
+			);
+			path = "Roman NumeralUITests";
+			sourceTree = "<group>";
+		};
+		5FC01D411CC78329007EE47F /* Roman Numeral WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01D421CC78329007EE47F /* Interface.storyboard */,
+				5FC01D451CC78329007EE47F /* Assets.xcassets */,
+				5FC01D471CC78329007EE47F /* Info.plist */,
+			);
+			path = "Roman Numeral WatchKit App";
+			sourceTree = "<group>";
+		};
+		5FC01D501CC78329007EE47F /* Roman Numeral WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01D531CC78329007EE47F /* InterfaceController.swift */,
+				5FC01D551CC78329007EE47F /* ExtensionDelegate.swift */,
+				5FC01D571CC78329007EE47F /* NotificationController.swift */,
+				5FC01D591CC78329007EE47F /* GlanceController.swift */,
+				5FC01D5B1CC78329007EE47F /* ComplicationController.swift */,
+				5FC01D5D1CC78329007EE47F /* Assets.xcassets */,
+				5FC01D5F1CC78329007EE47F /* Info.plist */,
+				5FC01D511CC78329007EE47F /* Supporting Files */,
+			);
+			path = "Roman Numeral WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		5FC01D511CC78329007EE47F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FC01D521CC78329007EE47F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FC01D141CC78329007EE47F /* Roman Numeral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01D6A1CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman Numeral" */;
+			buildPhases = (
+				5FC01D111CC78329007EE47F /* Sources */,
+				5FC01D121CC78329007EE47F /* Frameworks */,
+				5FC01D131CC78329007EE47F /* Resources */,
+				5FC01D691CC78329007EE47F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC01D401CC78329007EE47F /* PBXTargetDependency */,
+			);
+			name = "Roman Numeral";
+			productName = "Roman Numeral";
+			productReference = 5FC01D151CC78329007EE47F /* Roman Numeral.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FC01D281CC78329007EE47F /* Roman NumeralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01D6D1CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman NumeralTests" */;
+			buildPhases = (
+				5FC01D251CC78329007EE47F /* Sources */,
+				5FC01D261CC78329007EE47F /* Frameworks */,
+				5FC01D271CC78329007EE47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC01D2B1CC78329007EE47F /* PBXTargetDependency */,
+			);
+			name = "Roman NumeralTests";
+			productName = "Roman NumeralTests";
+			productReference = 5FC01D291CC78329007EE47F /* Roman NumeralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5FC01D331CC78329007EE47F /* Roman NumeralUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01D701CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman NumeralUITests" */;
+			buildPhases = (
+				5FC01D301CC78329007EE47F /* Sources */,
+				5FC01D311CC78329007EE47F /* Frameworks */,
+				5FC01D321CC78329007EE47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC01D361CC78329007EE47F /* PBXTargetDependency */,
+			);
+			name = "Roman NumeralUITests";
+			productName = "Roman NumeralUITests";
+			productReference = 5FC01D341CC78329007EE47F /* Roman NumeralUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		5FC01D3C1CC78329007EE47F /* Roman Numeral WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01D661CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman Numeral WatchKit App" */;
+			buildPhases = (
+				5FC01D3B1CC78329007EE47F /* Resources */,
+				5FC01D651CC78329007EE47F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FC01D4F1CC78329007EE47F /* PBXTargetDependency */,
+			);
+			name = "Roman Numeral WatchKit App";
+			productName = "Roman Numeral WatchKit App";
+			productReference = 5FC01D3D1CC78329007EE47F /* Roman Numeral WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5FC01D4B1CC78329007EE47F /* Roman Numeral WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FC01D621CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman Numeral WatchKit Extension" */;
+			buildPhases = (
+				5FC01D481CC78329007EE47F /* Sources */,
+				5FC01D491CC78329007EE47F /* Frameworks */,
+				5FC01D4A1CC78329007EE47F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roman Numeral WatchKit Extension";
+			productName = "Roman Numeral WatchKit Extension";
+			productReference = 5FC01D4C1CC78329007EE47F /* Roman Numeral WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FC01D0D1CC78329007EE47F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pasha Cretsu";
+				TargetAttributes = {
+					5FC01D141CC78329007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5FC01D281CC78329007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5FC01D141CC78329007EE47F;
+					};
+					5FC01D331CC78329007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5FC01D141CC78329007EE47F;
+					};
+					5FC01D3C1CC78329007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5FC01D4B1CC78329007EE47F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 5FC01D101CC78329007EE47F /* Build configuration list for PBXProject "Roman Numeral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FC01D0C1CC78329007EE47F;
+			productRefGroup = 5FC01D161CC78329007EE47F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FC01D141CC78329007EE47F /* Roman Numeral */,
+				5FC01D281CC78329007EE47F /* Roman NumeralTests */,
+				5FC01D331CC78329007EE47F /* Roman NumeralUITests */,
+				5FC01D3C1CC78329007EE47F /* Roman Numeral WatchKit App */,
+				5FC01D4B1CC78329007EE47F /* Roman Numeral WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FC01D131CC78329007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01D231CC78329007EE47F /* LaunchScreen.storyboard in Resources */,
+				5FC01D201CC78329007EE47F /* Assets.xcassets in Resources */,
+				5FC01D1E1CC78329007EE47F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D271CC78329007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D321CC78329007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D3B1CC78329007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01D461CC78329007EE47F /* Assets.xcassets in Resources */,
+				5FC01D441CC78329007EE47F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D4A1CC78329007EE47F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01D5E1CC78329007EE47F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FC01D111CC78329007EE47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01D1B1CC78329007EE47F /* ViewController.swift in Sources */,
+				5FC01D191CC78329007EE47F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D251CC78329007EE47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01D2E1CC78329007EE47F /* Roman_NumeralTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D301CC78329007EE47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01D391CC78329007EE47F /* Roman_NumeralUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC01D481CC78329007EE47F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FC01D581CC78329007EE47F /* NotificationController.swift in Sources */,
+				5FC01D561CC78329007EE47F /* ExtensionDelegate.swift in Sources */,
+				5FC01D5C1CC78329007EE47F /* ComplicationController.swift in Sources */,
+				5FC01D541CC78329007EE47F /* InterfaceController.swift in Sources */,
+				5FC01D5A1CC78329007EE47F /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FC01D2B1CC78329007EE47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC01D141CC78329007EE47F /* Roman Numeral */;
+			targetProxy = 5FC01D2A1CC78329007EE47F /* PBXContainerItemProxy */;
+		};
+		5FC01D361CC78329007EE47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC01D141CC78329007EE47F /* Roman Numeral */;
+			targetProxy = 5FC01D351CC78329007EE47F /* PBXContainerItemProxy */;
+		};
+		5FC01D401CC78329007EE47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC01D3C1CC78329007EE47F /* Roman Numeral WatchKit App */;
+			targetProxy = 5FC01D3F1CC78329007EE47F /* PBXContainerItemProxy */;
+		};
+		5FC01D4F1CC78329007EE47F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FC01D4B1CC78329007EE47F /* Roman Numeral WatchKit Extension */;
+			targetProxy = 5FC01D4E1CC78329007EE47F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FC01D1C1CC78329007EE47F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC01D1D1CC78329007EE47F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FC01D211CC78329007EE47F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC01D221CC78329007EE47F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5FC01D421CC78329007EE47F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FC01D431CC78329007EE47F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FC01D601CC78329007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5FC01D611CC78329007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FC01D631CC78329007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Roman Numeral WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-Numeral.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5FC01D641CC78329007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Roman Numeral WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-Numeral.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5FC01D671CC78329007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Roman_Numeral_WatchKit_Extension;
+				INFOPLIST_FILE = "Roman Numeral WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-Numeral.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		5FC01D681CC78329007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Roman_Numeral_WatchKit_Extension;
+				INFOPLIST_FILE = "Roman Numeral WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-Numeral.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		5FC01D6B1CC78329007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Roman Numeral/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-Numeral";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FC01D6C1CC78329007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Roman Numeral/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-Numeral";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5FC01D6E1CC78329007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Roman NumeralTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-NumeralTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roman Numeral.app/Roman Numeral";
+			};
+			name = Debug;
+		};
+		5FC01D6F1CC78329007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Roman NumeralTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-NumeralTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roman Numeral.app/Roman Numeral";
+			};
+			name = Release;
+		};
+		5FC01D711CC78329007EE47F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Roman NumeralUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-NumeralUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Roman Numeral";
+			};
+			name = Debug;
+		};
+		5FC01D721CC78329007EE47F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Roman NumeralUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qlicks.test.Roman-NumeralUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Roman Numeral";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FC01D101CC78329007EE47F /* Build configuration list for PBXProject "Roman Numeral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01D601CC78329007EE47F /* Debug */,
+				5FC01D611CC78329007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FC01D621CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman Numeral WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01D631CC78329007EE47F /* Debug */,
+				5FC01D641CC78329007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FC01D661CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman Numeral WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01D671CC78329007EE47F /* Debug */,
+				5FC01D681CC78329007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FC01D6A1CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman Numeral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01D6B1CC78329007EE47F /* Debug */,
+				5FC01D6C1CC78329007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FC01D6D1CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman NumeralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01D6E1CC78329007EE47F /* Debug */,
+				5FC01D6F1CC78329007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5FC01D701CC78329007EE47F /* Build configuration list for PBXNativeTarget "Roman NumeralUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FC01D711CC78329007EE47F /* Debug */,
+				5FC01D721CC78329007EE47F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FC01D0D1CC78329007EE47F /* Project object */;
+}
