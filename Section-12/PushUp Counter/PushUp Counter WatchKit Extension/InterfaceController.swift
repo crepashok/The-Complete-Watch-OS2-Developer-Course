@@ -17,7 +17,7 @@ class InterfaceController: WKInterfaceController {
     
     var reps : Int = 0
     var maxArray = [5, 8, 10, 12, 15, 20, 30]
-    var arrayNumber : Int = 0
+    var arrayNumber : Int = 3
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -42,6 +42,12 @@ class InterfaceController: WKInterfaceController {
     func addReps() {
     
         reps += 1
+        
+        if reps > maxArray[arrayNumber] {
+        
+            reps = 0
+            
+        }
         
         printButtonNumber()
     }
