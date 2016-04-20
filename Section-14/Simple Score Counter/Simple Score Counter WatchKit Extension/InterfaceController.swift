@@ -31,14 +31,33 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnScore0Action() {
-        
+        addScore0()
     }
     
     @IBAction func btnScore1Action() {
-        
+        addScore1()
     }
     
     @IBAction func btnResetAction() {
         
     }
+    
+    func addScore0() {
+        score0 += 1
+        printScrore0()
+    }
+    
+    func printScrore0() {
+        btnScore0.setTitle("\(score0)")
+    }
+    
+    func addScore1() {
+        score1 += 1
+        printScrore1()
+    }
+    
+    func printScrore1() {
+        btnScore1.setTitle("\(score1)")
+    }
+    
 }
