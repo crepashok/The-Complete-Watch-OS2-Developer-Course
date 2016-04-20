@@ -14,6 +14,8 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var tmrTimer: WKInterfaceTimer!
     
+    var productivityTimeInterval : NSTimeInterval = 1201
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
