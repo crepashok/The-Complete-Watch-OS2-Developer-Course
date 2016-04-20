@@ -14,6 +14,9 @@ class InterfaceController: WKInterfaceController {
     
     @IBOutlet var btnReps: WKInterfaceButton!
     @IBOutlet var btnMax: WKInterfaceButton!
+    
+    var reps : Int = 0
+    var maxArray = [5, 8, 10, 12, 15, 20, 30]
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
