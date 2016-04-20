@@ -95,10 +95,24 @@ class InterfaceController: WKInterfaceController {
     }
     
     func button0Correct() {
-        
+        if buttonCorrect == 0 {
+            addScore()
+        }
+        if buttonCorrect == 1 {
+            reset()
+        }
     }
     
     func button1Correct() {
+        if buttonCorrect == 1 {
+            addScore()
+        }
+        if buttonCorrect == 0 {
+            reset()
+        }
+    }
+    
+    func reset() {
         
     }
     
