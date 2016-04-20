@@ -11,19 +11,22 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Producitivity_Timer_WatchKit_App" customModuleProvider="target">
                     <items>
                         <button width="1" alignment="left" title="Start" id="krx-ho-3i5">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.74970366379310349" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="btnStartClick" destination="AgC-eL-Hgc" id="19D-pn-PrP"/>
                             </connections>
                         </button>
                         <timer width="1" height="66.5" alignment="left" textAlignment="center" format="abbreviated" previewedSeconds="1201" id="VgP-bW-MKl">
-                            <fontDescription key="font" type="system" pointSize="28"/>
+                            <fontDescription key="font" type="system" pointSize="32"/>
                         </timer>
                         <button width="1" alignment="left" title="Reset" id="Bjj-5m-6LZ">
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.74970366379310349" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="btnResetClick" destination="AgC-eL-Hgc" id="X6J-BO-WCT"/>
                             </connections>
                         </button>
                     </items>
+                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="tmrTimer" destination="VgP-bW-MKl" id="aEb-Fl-5b8"/>
                     </connections>
