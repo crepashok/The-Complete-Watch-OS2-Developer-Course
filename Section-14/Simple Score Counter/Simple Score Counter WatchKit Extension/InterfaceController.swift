@@ -15,6 +15,9 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var btnScore0: WKInterfaceButton!
     @IBOutlet var btnScore1: WKInterfaceButton!
     
+    var score0 : Int = 0
+    var score1 : Int = 0
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
     }
@@ -28,11 +31,14 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnScore0Action() {
+        
     }
     
     @IBAction func btnScore1Action() {
+        
     }
     
     @IBAction func btnResetAction() {
+        
     }
 }
