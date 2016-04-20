@@ -118,23 +118,28 @@ class InterfaceController: WKInterfaceController {
     }
     
     func changeTheColorOfRomanNumeral() {
+        
+        var labelsColor = UIColor.lightGrayColor()
+        
         if colorChange == 0 {
-            lblRomanNumber.setTextColor(UIColor.whiteColor())
+            labelsColor = UIColor.whiteColor()
         } else if colorChange == 1 {
-            lblRomanNumber.setTextColor(UIColor.orangeColor())
+            labelsColor = UIColor.orangeColor()
         } else if colorChange == 2 {
-            lblRomanNumber.setTextColor(UIColor.purpleColor())
+            labelsColor = UIColor.purpleColor()
         } else if colorChange == 3 {
-            lblRomanNumber.setTextColor(UIColor.greenColor())
+            labelsColor = UIColor.greenColor()
         } else if colorChange == 4 {
-            lblRomanNumber.setTextColor(UIColor.redColor())
+            labelsColor = UIColor.redColor()
         } else if colorChange == 5 {
-            lblRomanNumber.setTextColor(UIColor.blueColor())
+            labelsColor = UIColor.blueColor()
         } else if colorChange == 6 {
-            lblRomanNumber.setTextColor(UIColor.magentaColor())
-        } else {
-            lblRomanNumber.setTextColor(UIColor.lightGrayColor())
+            labelsColor = UIColor.magentaColor()
         }
+        
+        lblRomanNumber.setTextColor(labelsColor)
+        lblCorrect.setTextColor(labelsColor)
+        
         colorChange += 1
         
         if colorChange > 6 {
