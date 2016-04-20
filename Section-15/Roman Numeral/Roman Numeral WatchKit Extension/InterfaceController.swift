@@ -68,7 +68,21 @@ class InterfaceController: WKInterfaceController {
                 incorrectAnswer = 0
             }
             
+            btnAnswer1.setTitle("\(correctAnswerArray[(incorrectAnswer + 1)])")
+        }
+        
+        if buttonCorrect == 1 {
+            btnAnswer1.setTitle("\(correctAnswerArray[randomArrayNumber])")
+            
+            if randomArrayNumber == correctAnswerArray.count {
+                incorrectAnswer = 0
+            }
+            
             btnAnswer0.setTitle("\(correctAnswerArray[(incorrectAnswer + 1)])")
         }
+    }
+    
+    func addScore() {
+    
     }
 }
