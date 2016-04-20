@@ -21,6 +21,7 @@ class InterfaceController: WKInterfaceController {
     var totalCorrect : Int = 0
     var romanNumeralArray = ["I", "V", "X", "L", "C", "D", "M"]
     var randomArrayNumber : Int = 0
+    var correctAnswerArray = ["1", "5", "10", "15", "100", "500", "1000"]
     
     
     override func awakeWithContext(context: AnyObject?) {
@@ -57,6 +58,9 @@ class InterfaceController: WKInterfaceController {
     }
     
     func printButtons() {
-        
+        if buttonCorrect == 0 {
+            btnAnswer0.setTitle("\(correctAnswerArray[randomArrayNumber])")
+            btnAnswer0.setTitle("\(correctAnswerArray[(randomArrayNumber + 1)])")
+        }
     }
 }
