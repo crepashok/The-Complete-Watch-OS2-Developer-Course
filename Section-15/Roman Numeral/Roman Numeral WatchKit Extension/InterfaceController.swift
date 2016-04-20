@@ -26,6 +26,7 @@ class InterfaceController: WKInterfaceController {
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        reset()
     }
 
     
@@ -48,7 +49,7 @@ class InterfaceController: WKInterfaceController {
         button1Correct()
     }
     
-    func randomizeArray() {
+    func randomizeNumbers() {
         randomArrayNumber = Int(arc4random_uniform(UInt32(romanNumeralArray.count)))
         buttonCorrect = Int(arc4random_uniform(2))
         printRomanNumeral()
@@ -113,7 +114,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     func reset() {
-        
+        randomizeNumbers()
     }
     
 }
