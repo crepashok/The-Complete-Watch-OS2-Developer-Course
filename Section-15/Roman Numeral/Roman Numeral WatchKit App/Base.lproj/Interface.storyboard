@@ -10,7 +10,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Roman_Numeral_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="65.5" alignment="left" text="V" textAlignment="center" id="hqE-mG-T5J">
+                        <label width="1" height="55.5" alignment="left" text="V" textAlignment="center" id="hqE-mG-T5J">
                             <fontDescription key="font" type="system" pointSize="60"/>
                         </label>
                         <button width="1" alignment="left" title="Answer 0" id="b7K-nV-PyL">
@@ -23,15 +23,17 @@
                                 <action selector="btnAnswer1Action" destination="AgC-eL-Hgc" id="p2a-lW-mDW"/>
                             </connections>
                         </button>
+                        <label width="1" height="33.5" alignment="left" text="Correct: 0" textAlignment="center" id="XEa-ui-AKz"/>
                     </items>
                     <connections>
                         <outlet property="btnAnswer0" destination="b7K-nV-PyL" id="8Zj-cg-01d"/>
                         <outlet property="btnAnswer1" destination="VjV-Im-F7c" id="10u-Ra-ObY"/>
+                        <outlet property="lblCorrect" destination="XEa-ui-AKz" id="3FK-XX-oXa"/>
                         <outlet property="lblRomanNumber" destination="hqE-mG-T5J" id="xy4-yc-F0l"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="347"/>
+            <point key="canvasLocation" x="235" y="348.5"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
