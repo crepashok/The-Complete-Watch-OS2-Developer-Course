@@ -39,7 +39,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func btnResetAction() {
-        
+        reset()
     }
     
     func addScore0() {
@@ -58,6 +58,13 @@ class InterfaceController: WKInterfaceController {
     
     func printScrore1() {
         btnScore1.setTitle("\(score1)")
+    }
+    
+    func reset() {
+        score0 = 0
+        score1 = 0
+        printScrore0()
+        printScrore1()
     }
     
 }
