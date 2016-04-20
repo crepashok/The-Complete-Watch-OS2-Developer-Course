@@ -40,10 +40,12 @@ class InterfaceController: WKInterfaceController {
     
 
     @IBAction func btnAnswer0Action() {
+        button0Correct()
     }
     
     
     @IBAction func btnAnswer1Action() {
+        button1Correct()
     }
     
     func randomizeArray() {
@@ -80,9 +82,24 @@ class InterfaceController: WKInterfaceController {
             
             btnAnswer0.setTitle("\(correctAnswerArray[(incorrectAnswer + 1)])")
         }
+        addScore()
     }
     
     func addScore() {
-    
+        totalCorrect += 1
+        printScore()
     }
+    
+    func printScore() {
+        lblCorrect.setText("Correct: \(totalCorrect)")
+    }
+    
+    func button0Correct() {
+        
+    }
+    
+    func button1Correct() {
+        
+    }
+    
 }
