@@ -36,7 +36,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func btnMaxClick() {
-        
+        setMaxReps()
     }
     
     func addReps() {
@@ -54,5 +54,26 @@ class InterfaceController: WKInterfaceController {
     
     func printButtonNumber() {
         btnReps.setTitle("\(reps)")
+    }
+    
+    func setMaxReps() {
+    
+        arrayNumber += 1
+        
+        if arrayNumber >= maxArray.count {
+        
+            arrayNumber = 0
+            
+        }
+        
+        printMaxButton()
+    }
+    
+    func printMaxButton() {
+        btnMax.setTitle("Max: \(maxArray[arrayNumber])")
+        
+        reps = 0
+        
+        printButtonNumber()
     }
 }
