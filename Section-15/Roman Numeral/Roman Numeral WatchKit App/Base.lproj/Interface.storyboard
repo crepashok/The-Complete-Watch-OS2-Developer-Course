@@ -13,9 +13,22 @@
                         <label width="136" height="65.5" alignment="left" text="V" textAlignment="center" id="hqE-mG-T5J">
                             <fontDescription key="font" type="system" pointSize="60"/>
                         </label>
-                        <button width="1" alignment="left" title="Answer 0" id="b7K-nV-PyL"/>
-                        <button width="1" alignment="left" title="Answer 1" id="VjV-Im-F7c"/>
+                        <button width="1" alignment="left" title="Answer 0" id="b7K-nV-PyL">
+                            <connections>
+                                <action selector="btnAnswer0Action" destination="AgC-eL-Hgc" id="Ig1-f8-DYC"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Answer 1" id="VjV-Im-F7c">
+                            <connections>
+                                <action selector="btnAnswer1Action" destination="AgC-eL-Hgc" id="p2a-lW-mDW"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnAnswer0" destination="b7K-nV-PyL" id="8Zj-cg-01d"/>
+                        <outlet property="btnAnswer1" destination="VjV-Im-F7c" id="10u-Ra-ObY"/>
+                        <outlet property="lblRomanNumber" destination="hqE-mG-T5J" id="xy4-yc-F0l"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>

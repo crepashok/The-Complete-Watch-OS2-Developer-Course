@@ -12,20 +12,30 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var lblRomanNumber: WKInterfaceLabel!
+    @IBOutlet var btnAnswer0: WKInterfaceButton!
+    @IBOutlet var btnAnswer1: WKInterfaceButton!
+    
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
     }
 
+    
     override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
 
+    
     override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
 
+    @IBAction func btnAnswer0Action() {
+    }
+    
+    
+    @IBAction func btnAnswer1Action() {
+    }
 }
