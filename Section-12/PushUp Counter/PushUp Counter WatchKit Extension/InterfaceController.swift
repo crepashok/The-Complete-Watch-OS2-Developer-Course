@@ -17,6 +17,7 @@ class InterfaceController: WKInterfaceController {
     
     var reps : Int = 0
     var maxArray = [5, 8, 10, 12, 15, 20, 30]
+    var arrayNumber : Int = 0
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -31,10 +32,21 @@ class InterfaceController: WKInterfaceController {
     }
 
     @IBAction func btnRepsClick() {
-        
+        addReps()
     }
     
     @IBAction func btnMaxClick() {
         
+    }
+    
+    func addReps() {
+    
+        reps += 1
+        
+        printButtonNumber()
+    }
+    
+    func printButtonNumber() {
+        btnReps.setTitle("\(reps)")
     }
 }
