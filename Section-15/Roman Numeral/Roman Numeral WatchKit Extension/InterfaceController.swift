@@ -99,18 +99,14 @@ class InterfaceController: WKInterfaceController {
         if buttonCorrect == 0 {
             addScore()
         }
-        if buttonCorrect == 1 {
-            reset()
-        }
+        reset()
     }
     
     func button1Correct() {
         if buttonCorrect == 1 {
             addScore()
         }
-        if buttonCorrect == 0 {
-            reset()
-        }
+        reset()
     }
     
     func reset() {
