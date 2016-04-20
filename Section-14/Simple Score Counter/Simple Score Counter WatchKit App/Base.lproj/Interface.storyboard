@@ -14,14 +14,28 @@
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" pointSize="32"/>
+                            <connections>
+                                <action selector="btnScore0Action" destination="AgC-eL-Hgc" id="stt-Sw-01m"/>
+                            </connections>
                         </button>
                         <button width="1" height="48" alignment="left" title="0" id="OdZ-03-QoK">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="font" type="system" pointSize="32"/>
+                            <connections>
+                                <action selector="btnScore1Action" destination="AgC-eL-Hgc" id="2Ug-qS-3Hr"/>
+                            </connections>
                         </button>
-                        <button width="1" height="45" alignment="left" title="Reset" id="t3x-rM-uDp"/>
+                        <button width="1" height="45" alignment="left" title="Reset" id="t3x-rM-uDp">
+                            <connections>
+                                <action selector="btnResetAction" destination="AgC-eL-Hgc" id="X1i-Ze-G3a"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="btnScore0" destination="ojN-Cn-uSS" id="tNR-kZ-BVD"/>
+                        <outlet property="btnScore1" destination="OdZ-03-QoK" id="8kf-Og-kGZ"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
