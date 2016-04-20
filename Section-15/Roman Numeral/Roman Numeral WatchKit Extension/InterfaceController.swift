@@ -58,9 +58,17 @@ class InterfaceController: WKInterfaceController {
     }
     
     func printButtons() {
+        
+        var incorrectAnswer : Int = randomArrayNumber
+        
         if buttonCorrect == 0 {
             btnAnswer0.setTitle("\(correctAnswerArray[randomArrayNumber])")
-            btnAnswer0.setTitle("\(correctAnswerArray[(randomArrayNumber + 1)])")
+            
+            if randomArrayNumber == correctAnswerArray.count {
+                incorrectAnswer = 0
+            }
+            
+            btnAnswer0.setTitle("\(correctAnswerArray[(incorrectAnswer + 1)])")
         }
     }
 }
